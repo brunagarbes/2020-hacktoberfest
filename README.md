@@ -48,7 +48,7 @@ Instruções prévias:
 - Pedir para fazer conta no GitHub
 
 # Durante o evento, ideias
-- Ter um docs onde cada pessoa que está participando pode atualizar as perguntas:
+- Ter um docs/(ou por aqui, em uma issue?) onde cada pessoa que está participando pode atualizar as perguntas:
   - qual é o @ no github?
   - conseguiu configurar o git e github no rstudio?
   - link para os pull requests feitos, assim a gente tem uma métrica de quantas contribuições foram geradas neste evento
