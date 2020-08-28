@@ -14,12 +14,7 @@ Quantas pessoas? Ideal equilibrar com número de pessoas monitoras. Importante �
 ## Datas
 - Ideia de evento para outubro, em sábado
 
-Possibilidades de sábado no mês de outubro:
-- 03/10 - @beatrizmilz: Não posso, antes da Latin-R
-- 10/10 - @beatrizmilz: Não posso, logo após a Latin-R
-- 17/10 - @beatrizmilz: Para mim esse é o melhor dia!
-- 24/10 - @beatrizmilz: Minha segunda opção de data.
-- 31/10 - @beatrizmilz: Já é no final do mês. Risco de a pessoa não conseguir terminar as 4 contribuições da hacktoberfest.
+Possibilidades de sábado no mês de outubro: votação no doodle: https://doodle.com/poll/9qfy6gz38h8pf3wu
 
 ## Programação
 Ideia de horários:
@@ -52,3 +47,10 @@ Instruções prévias:
   - qual é o @ no github?
   - conseguiu configurar o git e github no rstudio?
   - link para os pull requests feitos, assim a gente tem uma métrica de quantas contribuições foram geradas neste evento
+  
+  
+# Ideias de repositório para contribuir
+- https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil - Atualizar redes sociais, eventos passados, adicionar materiais
+- https://github.com/carpentries/glosario - Glosário, submeter traduções em português. Maior dificuldade, cuidado com o yml. Precisa saber inglês.
+- códigos do livro R4DS com as bases em português?
+- procurar mais coisas legais , sobre R, em português :)
