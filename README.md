@@ -5,7 +5,8 @@ Organização e mentoria?
 - Beatriz Milz
 - Haydee Svab
 - Angélica Custódio
-- ...
+- Bruna Garbes
+- Jean Prado
 
 ## Público alvo
 
