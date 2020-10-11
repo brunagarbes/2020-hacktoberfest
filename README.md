@@ -1,4 +1,4 @@
-# Hacktoberfest
+# Contribuindo via GitHub no RStudio - R-Ladies SP na Hacktoberfest
 
 Organização e mentoria:
 
@@ -45,6 +45,7 @@ Ideia de horários:
   - Mostrar o método 1, mais simples pra fazer a contribuição. Mostrar todo o percurso, desde criar um fork, clonar, fazer uma branch, um commit, push, pull request, ... É útil usar o pacote usethis :)
   - Mão na massa! Meta: cada pessoa fazer 4 contribuições para ganhar a camiseta :)
   - Lista de repositórios com ideias sobre contribuições: https://github.com/mmfava/HacktobeRfest
+  - Criar nesse projeto mesmo
   
   - Todo mundo ter uma conta no GitHub
 - Cada pessoa cria um repositório próprio para saber como fazer, conseguir fazer um commit 
