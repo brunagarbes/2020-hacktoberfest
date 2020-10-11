@@ -23,18 +23,24 @@ Ideia de horários:
 - 10h - 12h:
   - Boas vindas
   - Apresentação sobre a R-Ladies São Paulo
-  - Ambientação: O que é um sistema de controle de versão, o que é git, github.. é legal abrir a página do github e mostrar mesmo!
-  - Falar sobre a Hackoberfest - como funciona o evento, o que precisa fazer para ganhar a camiseta. @beatrizmilz posso preparar algo
+  - Open Source (Haydee)
+  - Ambientação: O que é um sistema de controle de versão, o que é git, github..  Pq usar o Git e pq usar o GitHub.
+  - Conceitos fundamentais. - Haydee ajuda na parte de conceitos. Deixar os prints na apresentação. 
+  - Falar sobre a Hackoberfest - como funciona o evento, o que precisa fazer para ganhar a camiseta. @beatrizmilz posso preparar algo 
   - Falar que algumas contribuições são possíveis de serem feitas diretamente do navegador. 
   - Mostrar como configurar o git e github no RStudio. Ideia: ideal é que todas as pessoas consigam configurar!
   
-- 12h - 14h - Almoço
+- 12h - 13h30 - Almoço
 
-- 14h - 16h:
+-13h30 - 15h30:
   
   - Mostrar o método 1, mais simples pra fazer a contribuição. Mostrar todo o percurso, desde criar um fork, clonar, fazer uma branch, um commit, push, pull request, ... É útil usar o pacote usethis :)
   - Mão na massa! Meta: cada pessoa fazer 4 contribuições para ganhar a camiseta :)
-  - Deixar pré-organizado: Lista de repositórios com ideias sobre contribuições.
+  - Lista de repositórios com ideias sobre contribuições: https://github.com/mmfava/HacktobeRfest
+  
+  - Todo mundo ter uma conta no GitHub
+- Cada pessoa cria um repositório próprio para saber como fazer, conseguir fazer um commit 
+- Ter um repo da R-Ladies para fazerem um fork e PR de teste:  fazer contribuição via interface, fazer contribuição via RStudio
 
 # Enviar previamente
 
@@ -55,3 +61,8 @@ Instruções prévias:
 - https://github.com/carpentries/glosario - Glosário, submeter traduções em português. Maior dificuldade, cuidado com o yml. Precisa saber inglês.
 - códigos do livro R4DS com as bases em português?
 - procurar mais coisas legais , sobre R, em português :)
+
+
+
+
+- Número de inscrições: 30 pessoas participando, pelo menos 40 no meetup.
