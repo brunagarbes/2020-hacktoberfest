@@ -1,6 +1,6 @@
 # Hacktoberfest
 
-Organização e mentoria?
+Organização e mentoria:
 
 - Beatriz Milz
 - Haydee Svab
@@ -8,14 +8,22 @@ Organização e mentoria?
 - Bruna Garbes
 - Jean Prado
 
+
+Preparação:
+- Renata Hirota e Nicole Luduvice
+
+
+Podemos convidar outras pessoas para ajudar na monitoria.
+
 ## Público alvo
 
 Quantas pessoas? Ideal equilibrar com número de pessoas monitoras. Importante é qualidade, se tem muitas pessoas será muito mais difícil.
 
-## Datas
-- Ideia de evento para outubro, em sábado
+- Número de inscrições: 30 pessoas participando, pelo menos 40 no meetup.
 
-Possibilidades de sábado no mês de outubro: votação no doodle: https://doodle.com/poll/9qfy6gz38h8pf3wu
+
+## Datas
+- 17/10/2020
 
 ## Programação
 Ideia de horários:
@@ -62,7 +70,6 @@ Instruções prévias:
 - códigos do livro R4DS com as bases em português?
 - procurar mais coisas legais , sobre R, em português :)
 
+## Sorteio
 
-
-
-- Número de inscrições: 30 pessoas participando, pelo menos 40 no meetup.
+- Duas camisetas: uma M e uma G.
