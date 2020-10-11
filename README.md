@@ -30,18 +30,17 @@ Ideia de horários:
 
 - 10h - 12h:
   - Boas vindas
-  - Apresentação sobre a R-Ladies São Paulo
+  - Apresentação sobre a R-Ladies São Paulo (Jean)
   - Open Source (Haydee)
-  - Ambientação: O que é um sistema de controle de versão, o que é git, github..  Pq usar o Git e pq usar o GitHub.
+  - Ambientação: O que é um sistema de controle de versão, o que é git e pq usar (Haydee), o que é o GitHub e pq usar (Angélica) . Pq usar o Git e pq usar o GitHub.
   - Conceitos fundamentais. - Haydee ajuda na parte de conceitos. Deixar os prints na apresentação. 
-  - Falar sobre a Hackoberfest - como funciona o evento, o que precisa fazer para ganhar a camiseta. @beatrizmilz posso preparar algo 
-  - Falar que algumas contribuições são possíveis de serem feitas diretamente do navegador. 
-  - Mostrar como configurar o git e github no RStudio. Ideia: ideal é que todas as pessoas consigam configurar!
+  - Falar sobre a Hackoberfest - como funciona o evento, o que precisa fazer para ganhar a camiseta. Angélica apresenta. 
+  - Mostrar como configurar o git e github no RStudio. Ideia: ideal é que todas as pessoas consigam configurar! Jean apresenta
   
 - 12h - 13h30 - Almoço
 
 -13h30 - 15h30:
-  
+  - Live coding com a Bia
   - Mostrar o método 1, mais simples pra fazer a contribuição. Mostrar todo o percurso, desde criar um fork, clonar, fazer uma branch, um commit, push, pull request, ... É útil usar o pacote usethis :)
   - Mão na massa! Meta: cada pessoa fazer 4 contribuições para ganhar a camiseta :)
   - Lista de repositórios com ideias sobre contribuições: https://github.com/mmfava/HacktobeRfest
