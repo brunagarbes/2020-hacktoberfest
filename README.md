@@ -12,6 +12,8 @@ Todas as pessoas participantes devem seguir o [código de conduta da R-Ladies](h
 
 - Git, faça o download [neste link](https://git-scm.com/downloads).
 
+- Conta no [GitHub](https://github.com)
+
 - Instalar pacotes:
 
 ```
@@ -22,8 +24,10 @@ install.packages("usethis")
 
 - [R-Ladies São Paulo](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/rladies/)
 
-- Hacktoberfest - em breve!
-
 - Open Source - em breve!
 
+- [Hacktoberfest](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/) - em breve!
+
 - Introdução ao Git/GitHub - em breve!
+
+
