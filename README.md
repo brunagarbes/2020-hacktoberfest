@@ -59,7 +59,7 @@ install.packages("usethis")
 
 - Documentação do pacote [usethis](https://usethis.r-lib.org/reference/create_package.html)
 
-
+- [RStudio Cheatsheet](https://www.rstudio.com/wp-content/uploads/2019/01/Cheatsheets_2019.pdf)
 
 ## Contribuindo com as apresentações
 

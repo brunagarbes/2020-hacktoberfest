@@ -18,13 +18,6 @@ background-image: url("https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/s
 background-position: center
 background-size: contain
 
-```{r eval=FALSE, include=FALSE}
-# install.packages("xaringan")
-# install.packages("xaringanthemer")
-# install.packages("metathis")
-#devtools::install_github("gadenbuie/xaringanExtra")
-```
-
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
