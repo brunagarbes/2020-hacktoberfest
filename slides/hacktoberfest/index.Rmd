@@ -86,7 +86,7 @@ Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`
 - No site da __Hacktoberfest__, clique em [Start Hacking](https://hacktoberfest.digitalocean.com/login)
 
 
-```{r echo=FALSE, fig.align='center', out.width="85%"}
+```{r echo=FALSE, fig.align='center', out.width="80%"}
 knitr::include_graphics("img/start_hacking.jpeg")
 ```
 
