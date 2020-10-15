@@ -2,7 +2,7 @@
 title: "Hacktoberfest + R-Ladies São Paulo"
 author: 
   - "R-Ladies São Paulo"
-date: '`r Sys.Date()`'
+date: "Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`"
 output:
   xaringan::moon_reader:
     seal: false
@@ -13,7 +13,7 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
-class: title-slide
+class: title-slide, center
 background-image: url("https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/img/hf2020-background.png")
 background-position: center
 background-size: contain
@@ -38,6 +38,11 @@ xaringanExtra::use_logo(
 
 ```
 
+
+ R-Ladies São Paulo
+
+
+Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`
 
 
 ---

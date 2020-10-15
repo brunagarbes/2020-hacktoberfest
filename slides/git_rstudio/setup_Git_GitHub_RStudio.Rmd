@@ -2,6 +2,7 @@
 title: "Configurando o Git e GitHub no RStudio"
 author: "R-Ladies São Paulo"
 encoding: "UTF-8"
+date: "Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`"
 output:
   xaringan::moon_reader:
     seal: true

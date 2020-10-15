@@ -2,6 +2,7 @@
 title: "Open Source"
 author: "R-Ladies São Paulo"
 encoding: "UTF-8"
+date: "Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`"
 output:
   xaringan::moon_reader:
     seal: true
@@ -23,3 +24,9 @@ class: middle, center, inverse
 ```{r, child="configuracao.Rmd"}
 
 ```
+
+slide com classe inverse é útil para separar conteúdos
+
+---
+
+texto texto texto

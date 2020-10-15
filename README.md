@@ -26,7 +26,7 @@ install.packages("usethis")
   
   - [R-Ladies São Paulo](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/rladies/)
   
-  - Open Source - em breve!
+  - [Open Source](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/open_source/) 
   
   - [Hacktoberfest](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/) 
   

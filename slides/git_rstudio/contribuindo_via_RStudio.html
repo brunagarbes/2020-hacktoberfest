@@ -8,7 +8,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
     <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x187547902de4ac8b1191edef72f8571","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x04c8e320ffb43058e7ac4c2c5bc1e0d","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -32,6 +32,7 @@ class: center, middle, inverse, title-slide
 
 # Configurando o Git e GitHub no RStudio
 ### R-Ladies São Paulo
+### Atualizado em 15/10/2020
 
 ---
 
@@ -64,7 +65,12 @@ top:1em;right:1em;
       }
     } else {
       document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
-        .forEach(el => { el.innerHTML += '<a href="https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil" class="xaringan-extra-logo"></a>' })
+        .forEach(function (slide) {
+          const logo = document.createElement('a')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = 'https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil'
+          slide.appendChild(logo)
+        })
     }
   }
   document.addEventListener('DOMContentLoaded', addLogo)
