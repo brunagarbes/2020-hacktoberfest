@@ -18,6 +18,17 @@ background-image: url("https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/s
 background-position: center
 background-size: contain
 
+
+```{r eval=FALSE, include=FALSE}
+#devtools::install_github("hadley/emo", dependencies = TRUE)
+#install.packages("sysfonts")
+#install.packages("showtext")
+#install.packages("xaringan")
+#install.packages("xaringanthemer")
+#install.packages("metathis")
+#devtools::install_github("gadenbuie/xaringanExtra")
+```
+
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
@@ -75,14 +86,18 @@ Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`
 - No site da __Hacktoberfest__, clique em [Start Hacking](https://hacktoberfest.digitalocean.com/login)
 
 
-__- COLOCAR IMAGEM__
+```{r echo=FALSE, fig.align='center', out.width="85%"}
+knitr::include_graphics("img/start_hacking.jpeg")
+```
 
 ---
 ## Como participar?
 
 - Dê permissão utilizando sua conta do GitHub
 
-__- COLOCAR IMAGEM__
+```{r echo=FALSE, fig.align='center', out.width="50%"}
+knitr::include_graphics("img/con_github.jpeg")
+```
 
 ---
 ## Como participar?
