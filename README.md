@@ -28,7 +28,7 @@ install.packages("usethis")
   
   - Open Source - em breve!
   
-  - [Hacktoberfest](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/) -
+  - [Hacktoberfest](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/) 
   
   - Introdução ao Git/GitHub - em breve!
   
@@ -38,7 +38,7 @@ install.packages("usethis")
 
    - [Contribuindo através da interface web do GitHub]() - Em breve!
 
-   - [Contribuindo através do RStudio](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/git_rstudio/contribuindo.html)
+   - [Contribuindo através do RStudio](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/git_rstudio/contribuindo_via_RStudio.html)
    
    
    
@@ -58,3 +58,16 @@ install.packages("usethis")
 - Livro [Happy Git and GitHub for the useR](https://happygitwithr.com/), escrito por Jenny Bryan.
 
 - Documentação do pacote [usethis](https://usethis.r-lib.org/reference/create_package.html)
+
+
+
+## Contribuindo com as apresentações
+
+```
+install.packages("xaringan", dependencies = TRUE)
+install.packages("xaringanthemer", dependencies = TRUE)
+install.packages("metathis", dependencies = TRUE)
+install.packages("pagedown", dependencies = TRUE)
+devtools::install_github("gadenbuie/xaringanExtra", dependencies = TRUE)
+devtools::install_github("hadley/emo", dependencies = TRUE)
+```
