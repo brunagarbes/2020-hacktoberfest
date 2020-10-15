@@ -74,7 +74,18 @@ Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`
 
 - No site da __Hacktoberfest__, clique em [Start Hacking](https://hacktoberfest.digitalocean.com/login)
 
+
+__- COLOCAR IMAGEM__
+
+---
+## Como participar?
+
 - Dê permissão utilizando sua conta do GitHub
+
+__- COLOCAR IMAGEM__
+
+---
+## Como participar?
 
 - [Nesta página](https://hacktoberfest.digitalocean.com/profile) ficarão listados as suas contribuções, com uma legenda sobre o status da sua contribuição. Exemplo:
 

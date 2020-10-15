@@ -28,9 +28,9 @@ install.packages("usethis")
   
   - [Open Source](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/open_source/) 
   
-  - [Hacktoberfest](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/) 
-  
   - Introdução ao Git/GitHub - em breve!
+  
+  - [Hacktoberfest](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/) 
   
   - [Configurando o Git e GitHub no RStudio](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/git_rstudio/setup_Git_GitHub_RStudio.html)
 
