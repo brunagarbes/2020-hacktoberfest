@@ -1,0 +1,60 @@
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+knitr::opts_chunk$set(fig.align = "center",
+                     # message = FALSE,
+                      warning = FALSE,
+                      echo = FALSE
+                      )
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#88398a",
+  secondary_color = "#58519b",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+```{r xaringanExtra, echo=FALSE}
+#devtools::install_github("gadenbuie/xaringanExtra")
+xaringanExtra::use_xaringan_extra(c("tile_view", "animate_css", "tachyons"))
+
+xaringanExtra::use_editable(expires = 1)
+
+xaringanExtra::use_logo(
+  image_url = "img/rainbow-inclusive.png",
+  link_url = "https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil"
+)
+
+xaringanExtra::use_clipboard()
+
+xaringanExtra::use_fit_screen()
+
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = FALSE  #<<
+)
+
+```
+
+```{r xaringanExtra-share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
+<!-- inicio font awesome -->
+<script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
+<!-- final font awesome -->
+
+<!-- inicio github buttons  -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- final github buttons  -->
+
+```{r include=FALSE}
+# remotes::install_github("cienciadedatos/dados")
+# remotes::install_github("carpentries/glosario-r")
+# library(dados)
+# library(tidyverse)
+# library(glosario)
+```

@@ -1,0 +1,295 @@
+---
+title: "Configurando o Git e GitHub no RStudio"
+author: "R-Ladies São Paulo"
+encoding: "UTF-8"
+output:
+  xaringan::moon_reader:
+    seal: true
+    lib_dir: libs
+    chakra: libs/remark-latest.min.js
+    css: [xaringan-themer.css, custom.css]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+#      ratio: 191:100
+glosario:
+   language: 'pt'
+
+# pagedown::chrome_print("docs/git_rstudio/index.html", output = "docs/git_rstudio/pdf/rladies-gyn-27-08-2020.pdf")
+---
+class: middle, center, inverse
+
+```{r, child="configuracao.Rmd"}
+
+```
+
+
+# Pré-requisitos
+
+## `r emo::ji("woman_technologist")` Para usar no Computador
+
+
+---
+class: middle
+
+.pull-left[
+## R 
+  - [Download neste link](https://cran.r-project.org/)
+  - Use a versão mais recente `r emo::ji("wink")`
+
+
+  
+]
+
+.pull-right[
+```{r, out.width="100%"}
+knitr::include_graphics("img/R_logo.svg.png")
+```
+]
+
+
+---
+class:middle
+
+```{r, out.width="100%"}
+knitr::include_graphics("img/prints/install_R.png")
+```
+
+
+---
+class: middle
+
+
+.pull-left[
+## RStudio
+  - [Download neste link](https://www.rstudio.com/products/rstudio/download/)
+  - Use a versão mais recente `r emo::ji("wink")`
+  
+
+  
+]
+
+.pull-right[
+```{r out.width="100%"}
+knitr::include_graphics("img/rstudio.png")
+```
+]
+
+---
+class: middle
+
+```{r, out.width="100%"}
+knitr::include_graphics("img/prints/install_RStudio.png")
+```
+
+---
+class: middle
+
+.pull-left[
+
+## Git 
+  - [Download neste link](https://git-scm.com/downloads)
+
+  
+
+]
+
+
+.pull-right[
+```{r out.width="80%"}
+knitr::include_graphics("https://git-scm.com/images/logo@2x.png")
+```
+
+]
+
+---
+class:middle
+
+```{r, out.width="70%"}
+knitr::include_graphics("img/prints/install-git.png")
+```
+
+---
+class: middle
+
+
+.pull-left[
+## Conta no GitHub
+  - [Neste link](https://github.com/)
+  - Caso já tenha, não é preciso criar uma nova conta.
+  
+  
+
+  
+]
+
+.pull-right[
+```{r out.width="100%"}
+knitr::include_graphics("img/github-logo.png")
+```
+]
+
+  - Se for estudante: 
+    - [GitHub Student Developer Pack](https://education.github.com/pack) - utiliza email institucional da universidade.
+
+
+---
+class: middle
+
+
+## Instalação de pacotes
+
+- Instalar o Pacote [`usethis`](https://usethis.r-lib.org/)
+
+```{r echo=TRUE, eval=FALSE}
+install.packages("usethis")
+library(usethis)
+```
+
+```{r}
+knitr::include_graphics("https://usethis.r-lib.org/reference/figures/logo.png")
+```
+
+
+
+
+---
+class: middle,  inverse, center
+
+# Configurando o Git e GitHub no RStudio
+
+`r emo::ji("woman_technologist")` No computador: É necessário fazer apenas uma vez (por usuário)!
+
+---
+class: middle,  inverse, center
+
+## Configurando o Git e GitHub no RStudio
+
+- `r emo::ji("white_large_square")` Ter o pacote `usethis` instalado 
+
+- `r emo::ji("white_large_square")` Se apresentar para o `git` 
+
+- `r emo::ji("white_large_square")` Abrir o arquivo `.Renviron` 
+
+- `r emo::ji("white_large_square")` Criar um GitHub Token 
+
+- `r emo::ji("white_large_square")` Adicionar o GitHub Token no arquivo `.Renviron` 
+
+- `r emo::ji("white_large_square")` Reiniciar o RStudio
+
+<!-- `r emo::ji("heavy_check_mark")` -->
+
+<!--  `r emo::ji("x")` -->
+
+---
+class: middle
+
+## Configurando o Git
+
+- Informar para o Git seu nome, e email.
+
+- Utilize o mesmo email associado à sua conta do GitHub.
+
+- Duas possibilidades: no terminal (linha de comando) ou com uma função do `usethis`.
+
+
+  - Com o `usethis`:
+
+```{r echo=TRUE, eval=FALSE}
+usethis::use_git_config(# Seu nome
+                        user.name = "Beatriz Milz", 
+                        # Seu email
+                        user.email = "beatriz.milz@hotmail.com") 
+```
+
+---
+class: middle
+
+## Configurando o Git
+
+- No terminal (Substitua pelo seu nome e email  vinculado à conta do GitHub):
+
+```{git echo=TRUE, eval=FALSE}
+git config --global user.name "Beatriz Milz"
+
+git config --global user.email beatriz.milz@hotmail.com
+```
+
+
+
+
+```{r out.width="80%"}
+knitr::include_graphics("img/prints/configurar_git.PNG")
+```
+
+
+---
+class: middle
+
+## Configurando o GitHub + RStudio
+
+- Abra o arquivo `.Renviron` usando a seguinte função:
+
+```{r  echo=TRUE, eval=FALSE}
+usethis::edit_r_environ()
+# * Edit 'C:/Users/beatr/Documents/.Renviron'
+# * Restart R for changes to take effect
+```
+
+---
+class: middle
+
+## Configurando o GitHub + RStudio
+
+- Criar um novo token no GitHub:
+
+```{r echo=TRUE, eval=FALSE}
+usethis::browse_github_token()
+# ✔ Opening URL 'https://github.com/settings/tokens/new?scopes=repo,gist&description=R:GITHUB_PAT'
+# ● Call `usethis::edit_r_environ()` to open '.Renviron'.
+# ● Store your PAT with a line like:
+{{#   GITHUB_PAT=xxxyyyzzz}}
+#   [Copied to clipboard]
+# ● Make sure '.Renviron' ends with a newline!
+```
+
+- Uma página do GitHub irá abrir, com as configurações necessárias. Você pode alterar o nome do token, para saber em qual computador está vinculando. Crie o novo token.
+
+---
+class: middle  
+
+- Exemplo:
+
+```{r out.width="100%"}
+knitr::include_graphics("img/gifs/browse-github-token2.gif")
+```
+
+
+
+.minirodape[Caso você esteja vendo a versão em PDF, o video acima não irá funcionar. Veja clicando [neste link](https://beatrizmilz.github.io/slidesR/git_rstudio/img/gifs/browse-github-token2.gif).]
+
+---
+
+- Copie o token gerado:
+
+```{r out.width="100%"}
+knitr::include_graphics("img/prints/copy-token.png")
+```
+
+---
+
+- Abra o arquivo `.Renviron`:
+```{r echo=TRUE, eval=FALSE}
+usethis::edit_r_environ()
+# ● Modify 'C:/Users/beatr/Documents/.Renviron'
+# ● Restart R for changes to take effect
+```
+
+- Crie uma nova linha na forma `GITHUB_PAT=SEU_TOKEN`, adicione o token, pule uma linha e salve o arquivo.
+
+```{r out.width="60%"}
+knitr::include_graphics("img/prints/githubpath.png")
+```
+
+- **Reinicie o RStudio**:  CTRL + SHIFT + F10

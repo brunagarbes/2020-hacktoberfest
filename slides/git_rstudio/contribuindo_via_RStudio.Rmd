@@ -1,0 +1,253 @@
+---
+title: "Configurando o Git e GitHub no RStudio"
+author: "R-Ladies São Paulo"
+encoding: "UTF-8"
+output:
+  xaringan::moon_reader:
+    seal: true
+    lib_dir: libs
+    chakra: libs/remark-latest.min.js
+    css: [xaringan-themer.css, custom.css]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+#      ratio: 191:100
+glosario:
+   language: 'pt'
+
+# pagedown::chrome_print("docs/git_rstudio/index.html", output = "docs/git_rstudio/pdf/rladies-gyn-27-08-2020.pdf")
+---
+class: middle, center, inverse
+
+```{r, child="configuracao.Rmd"}
+
+```
+
+---
+class: middle
+
+## Interface Gráfica RStudio
+
+```{r, out.width="95%"}
+knitr::include_graphics("img/prints/cheatsheet.PNG")
+```
+
+Fonte: [RStudio Cheatsheet](https://www.rstudio.com/wp-content/uploads/2019/01/Cheatsheets_2019.pdf)
+
+
+---
+class: middle, center, inverse
+
+# Trabalhando com projetos no RStudio + GitHub
+
+--
+
+## `r emo::ji("woman_technologist")` No computador
+
+---
+##  **Clonando um repositório do GitHub**
+
+- [Crie um repositório no GitHub](https://github.com/new), ou abra a página de um repositório já existente. 
+
+.pull-left[
+- Criando um repositório no GitHub:
+
+```{r out.width="80%"}
+knitr::include_graphics("img/prints/novo-repo.PNG")
+```
+
+]
+
+.pull-right[
+
+Se o repositório não for "seu", faça um fork primeiro, e clone o seu fork. 
+
+```{r out.width="100%"}
+knitr::include_graphics("img/prints/fork.png")
+```
+
+]
+
+
+
+
+
+
+---
+class: middle
+
+- No RStudio, crie um novo projeto: File > New Project 
+.pull-left[
+- Na aba "Create Project", selecione a opção **Version Control**.
+
+```{r out.width="100%"}
+knitr::include_graphics("img/prints/proj-version-control-1.PNG")
+```
+]
+
+.pull-right[
+
+- Na aba "Create Project from Version Control", selecione a opção **Git**.
+```{r out.width="100%"}
+knitr::include_graphics("img/prints/proj-version-control-2.png")
+```
+]
+
+
+
+
+---
+- Na aba "Clone Git Repository":
+  - **Repository URL**: Cole o link para o repositório
+  - **Project directory name**: Após inserir o repository URL, esse campo será preenchido automaticamente.
+  - **Create project as subdirectory of**: Selecione o diretório onde você deseja manter sua cópia local do repositório.
+```{r out.width="50%"}
+knitr::include_graphics("img/prints/proj-version-control-3.png")
+```
+
+- O **RStudio** irá fazer o clone do repositório, e abrirá um RProj para ele (caso não exista um ainda, será criado).
+
+---
+
+### Função para criar um arquivo `README`:
+
+
+- Em Markdown: `README.md`
+```{r, echo=TRUE, eval=FALSE}
+usethis::use_readme_md()
+
+```
+
+- Em R Markdown: `README.Rmd` - precisa sempre ser compilado ao `.md`
+```{r, echo=TRUE, eval=FALSE}
+usethis::use_readme_rmd()
+
+```
+
+- O arquivo será criado e aberto, para ser editado e salvo.
+
+```{r, out.width="30%"}
+knitr::include_graphics("https://media2.giphy.com/media/1iu8uG2cjYFZS6wTxv/giphy-downsized.gif")
+```
+
+
+---
+class: middle  bg-main4
+
+### Exemplo:
+
+```{r out.width="100%"}
+knitr::include_graphics("img/gifs/create-proj2.gif")
+```
+
+.minirodape[Caso você esteja vendo a versão em PDF, o video acima não irá funcionar. Veja clicando [neste link](https://beatrizmilz.github.io/slidesR/git_rstudio/img/gifs/create-proj2.gif).]
+
+
+---
+### Crie uma branch
+
+- Antes de fazer qualquer modificação, crie uma branch, usando a função `usethis::pr_init(branch = "nome_da_branch")`. 
+- Argumento importante: `branch =` indica o nome da branch que você quer criar. 
+
+```{r echo=TRUE, eval=FALSE}
+usethis::pr_init(branch = "teste")
+
+# ✔ Checking that local branch 'master' has the changes in 'origin/master'
+# ✔ Creating local PR branch 'teste'
+# ✔ Switching to branch 'teste'
+# ● Use `pr_push()` to create PR
+```
+
+---
+### Faça alterações e commits
+
+- Faça suas contribuições, e sempre faça commits com mensagens que deixem claro as mudanças.
+
+- Quando terminar as contribuições necessárias, utilizar a função `pr_push()`:
+
+```{r echo=TRUE, eval=FALSE}
+pr_push()
+# ✔ Pushing local 'teste' branch to 'origin:teste'
+# ✔ Setting upstream tracking branch for 'teste' to 'origin/teste'
+# ✔ Create PR at link given below
+# ✔ Opening URL 'https://github.com/beatrizmilz/RLadies-Git-RStudio-2019/compare/teste'
+```
+
+- A página do GitHub será aberta, para que possa completar o Pull Request.
+
+---
+class: middle 
+
+### Crie um Pull Request: 
+```{r out.width="80%"}
+knitr::include_graphics("img/prints/pr-push.PNG")
+```
+
+---
+class: middle 
+
+### Open a Pull Request: 
+```{r out.width="80%"}
+knitr::include_graphics("img/prints/pr-push2.png")
+```
+
+---
+
+
+### Exemplo: PR foi aberto
+
+```{r out.width="80%"}
+knitr::include_graphics("img/prints/pr-push3.png")
+```
+
+- Depois dessa etapa, você deve esperar a pessoa que mantém o repositório responder fazendo sugestões para melhorias, aceitando seu PR, etc.
+
+
+---
+
+### Modificar o PR
+
+- Alguém fez uma sugestão, como alterar o PR enviado? Ex:
+
+```{r echo=FALSE, out.width="70%"}
+knitr::include_graphics("img/prints/sugestoes-git.PNG")
+```
+- No mesmo projeto e na __mesma branch__ que você usou para enviar o PR, faça as alterações.
+
+- Selecione o arquivo modificado para deixá-lo disponível para criar um Commit. Faça o commit.
+
+- Para enviar o novo commit, use o Git Push (aperte a seta verde para cima no painel do Git do RStudio).
+
+
+
+
+
+---
+
+### Depois que o PR é aceito:  Merged
+
+```{r out.width="80%"}
+knitr::include_graphics("img/prints/pr-push4.PNG")
+```
+
+---
+class: middle 
+
+### Última etapa: __APÓS__ o PR ter sido aceito (merged)
+
+- A função `pr_finish()`:
+  - Retorna para master
+  - Atualiza (usando o pull) o conteúdo 
+  - Deleta a branch criada para enviar o PR
+
+```{r echo=TRUE, eval=FALSE}
+pr_finish()
+# ✔ Switching back to 'master' branch
+# ✔ Pulling changes from GitHub source repo 'origin/master'
+# ✔ Deleting local 'teste' branch
+```
+
+- Pronto! 
+
+

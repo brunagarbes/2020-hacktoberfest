@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Git e RStudio</title>
+    <title>Configurando o Git e GitHub no RStudio</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Beatriz Milz" />
+    <meta name="author" content="R-Ladies São Paulo" />
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
     <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"b8041235922d40db9eb71f2c13f18a3e","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x402832b959d4773a0d101214430f8d9","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -23,23 +23,6 @@
     <script src="libs/shareon/shareon.min.js"></script>
     <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
-    <meta name="github-repo" content="beatrizmilz/slidesR"/>
-    <meta name="twitter:title" content="Utilizando o Git e GitHub no RStudio"/>
-    <meta name="twitter:description" content="Apresentação sobre os primeiros passos sobre como utilizar o Git e Git Hub, diretamente do RStudio"/>
-    <meta name="twitter:url" content="https://beatrizmilz.github.io/slidesR/git_rstudio/index.html"/>
-    <meta name="twitter:image:src" content="https://beatrizmilz.github.io/slidesR/git_rstudio/img/share-card.png"/>
-    <meta name="twitter:image:alt" content="Primeiro slide da apresentação sobre os primeiros passos sobre como utilizar o Git e GitHub diretamente do RStudio Apresentado por Beatriz Milz"/>
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:creator" content="@beamilz"/>
-    <meta name="twitter:site" content="@beamilz"/>
-    <meta property="og:title" content="Utilizando o Git e GitHub no RStudio"/>
-    <meta property="og:description" content="Apresentação sobre os primeiros passos sobre como utilizar o Git e Git Hub, diretamente do RStudio"/>
-    <meta property="og:url" content="https://beatrizmilz.github.io/slidesR/git_rstudio/index.html"/>
-    <meta property="og:image" content="https://beatrizmilz.github.io/slidesR/git_rstudio/img/share-card.png"/>
-    <meta property="og:image:alt" content="Primeiro slide da apresentação sobre os primeiros passos sobre como utilizar o Git e GitHub diretamente do RStudio Apresentado por Beatriz Milz"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:locale" content="en_US"/>
-    <meta property="article:author" content="Beatriz Milz"/>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
@@ -47,12 +30,12 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Git e RStudio
-### Beatriz Milz
+# Configurando o Git e GitHub no RStudio
+### R-Ladies São Paulo
 
 ---
 
-
+class: middle, center, inverse
 
 
 
@@ -101,127 +84,256 @@ top:1em;right:1em;
 
 
 
+# Pré-requisitos
 
-
-
-
----
-class: middle, center
-
-&lt;img src="img/github.PNG" width="70%" style="display: block; margin: auto;" /&gt;
-
-
----
-
-## Comentários importantes
-
-- Você pode usar o Git através:
-  -  __Linha de comando__ :
-      - [git](https://git-scm.com/)
-      - terminal do RStudio
-  - __Interfaces gráficas__:
-      - [GitHub Desktop](https://desktop.github.com/)
-      - [Sourcetree](https://www.sourcetreeapp.com/)
-      - Git Pane do RStudio
-      - Entre outros!
-    
-Aqui apresentamos com o RStudio, mas escolha o que é mais confortável para você :)
-
-- Independente de qual ferramenta você escolher, é importante qual comando do Git equivale a um "botão" na interface gráfica. É muito importante entender as equivalências!
-
-
----
-class: middle, center, inverse
-
-# Interface gráfica do RStudio
-
----
-class: middle
-
-## Interface Gráfica RStudio
-
-- O RStudio oferece um cliente Git **simples**, na aba "Git" (em inglês, é chamado de Git Pane).
-
-- Esse painel somente aparecerá em projetos que estejam versionados com Git.
-
-&lt;img src="img/prints/git-pane.PNG" width="95%" style="display: block; margin: auto;" /&gt;
-
----
-
-## Equivalência dos principais comandos
-
-### Linha de comando vs RStudio
-
-- git status
-
-- git add [arquivo]
-
-- git commit -m "[mensagem descritiva]"
-
-- git diff
-
-- git pull
-
-- git push
-
-- ...
+## 👩‍💻 Para usar no Computador
 
 
 ---
 class: middle
 
-## Git pane - Staged  ✅
+.pull-left[
+## R 
+  - [Download neste link](https://cran.r-project.org/)
+  - Use a versão mais recente 😉
 
-&lt;img src="img/prints/git-pane-stage.png" width="963" style="display: block; margin: auto;" /&gt;
 
----
-class: middle
+  
+]
 
-## Git pane - Commit
-
-&lt;img src="img/prints/git-pane-commit.PNG" width="100%" style="display: block; margin: auto;" /&gt;
-
----
-class: middle
-
-## Git pane - Commit
-
-&lt;img src="img/prints/git_commit.PNG" width="100%" style="display: block; margin: auto;" /&gt;
+.pull-right[
+&lt;img src="img/R_logo.svg.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
 
 
 ---
-class: middle
+class:middle
 
-## Botão Diff -&gt; Review changes
-
-&lt;img src="img/prints/git-pane-diff.PNG" width="90%" style="display: block; margin: auto;" /&gt;
-
----
-class: middle
-
-## Botão 🕒 (history) -&gt; Review changes
-
-&lt;img src="img/prints/git-pane-history.PNG" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/prints/install_R.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 
 ---
 class: middle
 
-## Branch
 
-&lt;img src="img/prints/git-pane-branch.png" width="960" style="display: block; margin: auto;" /&gt;
+.pull-left[
+## RStudio
+  - [Download neste link](https://www.rstudio.com/products/rstudio/download/)
+  - Use a versão mais recente 😉
+  
 
+  
+]
+
+.pull-right[
+&lt;img src="img/rstudio.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+class: middle
+
+&lt;img src="img/prints/install_RStudio.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+class: middle
+
+.pull-left[
+
+## Git 
+  - [Download neste link](https://git-scm.com/downloads)
+
+  
+
+]
+
+
+.pull-right[
+&lt;img src="https://git-scm.com/images/logo@2x.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+class:middle
+
+&lt;img src="img/prints/install-git.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+class: middle
+
+
+.pull-left[
+## Conta no GitHub
+  - [Neste link](https://github.com/)
+  - Caso já tenha, não é preciso criar uma nova conta.
+  
+  
+
+  
+]
+
+.pull-right[
+&lt;img src="img/github-logo.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+  - Se for estudante: 
+    - [GitHub Student Developer Pack](https://education.github.com/pack) - utiliza email institucional da universidade.
+
+
+---
+class: middle
+
+
+## Instalação de pacotes
+
+- Instalar o Pacote [`usethis`](https://usethis.r-lib.org/)
+
+
+```r
+install.packages("usethis")
+library(usethis)
+```
+
+&lt;img src="https://usethis.r-lib.org/reference/figures/logo.png" style="display: block; margin: auto;" /&gt;
 
 
 
 
 ---
-class: center, middle 
+class: middle,  inverse, center
 
-## Linha de comando ou interface gráfica?
-## Use o que for melhor para **você**!
+# Configurando o Git e GitHub no RStudio
 
-&lt;img src="https://media0.giphy.com/media/dNgK7Ws7y176U/giphy.gif" width="50%" style="display: block; margin: auto;" /&gt;
+👩‍💻 No computador: É necessário fazer apenas uma vez (por usuário)!
+
+---
+class: middle,  inverse, center
+
+## Configurando o Git e GitHub no RStudio
+
+- ⬜ Ter o pacote `usethis` instalado 
+
+- ⬜ Se apresentar para o `git` 
+
+- ⬜ Abrir o arquivo `.Renviron` 
+
+- ⬜ Criar um GitHub Token 
+
+- ⬜ Adicionar o GitHub Token no arquivo `.Renviron` 
+
+- ⬜ Reiniciar o RStudio
+
+&lt;!-- ✔️ --&gt;
+
+&lt;!--  ❌ --&gt;
+
+---
+class: middle
+
+## Configurando o Git
+
+- Informar para o Git seu nome, e email.
+
+- Utilize o mesmo email associado à sua conta do GitHub.
+
+- Duas possibilidades: no terminal (linha de comando) ou com uma função do `usethis`.
+
+
+  - Com o `usethis`:
+
+
+```r
+usethis::use_git_config(# Seu nome
+                        user.name = "Beatriz Milz", 
+                        # Seu email
+                        user.email = "beatriz.milz@hotmail.com") 
+```
+
+---
+class: middle
+
+## Configurando o Git
+
+- No terminal (Substitua pelo seu nome e email  vinculado à conta do GitHub):
+
+
+```git
+git config --global user.name "Beatriz Milz"
+
+git config --global user.email beatriz.milz@hotmail.com
+```
+
+
+
+
+&lt;img src="img/prints/configurar_git.PNG" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+---
+class: middle
+
+## Configurando o GitHub + RStudio
+
+- Abra o arquivo `.Renviron` usando a seguinte função:
+
+
+```r
+usethis::edit_r_environ()
+# * Edit 'C:/Users/beatr/Documents/.Renviron'
+# * Restart R for changes to take effect
+```
+
+---
+class: middle
+
+## Configurando o GitHub + RStudio
+
+- Criar um novo token no GitHub:
+
+
+```r
+usethis::browse_github_token()
+# ✔ Opening URL 'https://github.com/settings/tokens/new?scopes=repo,gist&amp;description=R:GITHUB_PAT'
+# ● Call `usethis::edit_r_environ()` to open '.Renviron'.
+# ● Store your PAT with a line like:
+*#   GITHUB_PAT=xxxyyyzzz
+#   [Copied to clipboard]
+# ● Make sure '.Renviron' ends with a newline!
+```
+
+- Uma página do GitHub irá abrir, com as configurações necessárias. Você pode alterar o nome do token, para saber em qual computador está vinculando. Crie o novo token.
+
+---
+class: middle  
+
+- Exemplo:
+
+&lt;img src="img/gifs/browse-github-token2.gif" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+.minirodape[Caso você esteja vendo a versão em PDF, o video acima não irá funcionar. Veja clicando [neste link](https://beatrizmilz.github.io/slidesR/git_rstudio/img/gifs/browse-github-token2.gif).]
+
+---
+
+- Copie o token gerado:
+
+&lt;img src="img/prints/copy-token.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+- Abra o arquivo `.Renviron`:
+
+```r
+usethis::edit_r_environ()
+# ● Modify 'C:/Users/beatr/Documents/.Renviron'
+# ● Restart R for changes to take effect
+```
+
+- Crie uma nova linha na forma `GITHUB_PAT=SEU_TOKEN`, adicione o token, pule uma linha e salve o arquivo.
+
+&lt;img src="img/prints/githubpath.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+- **Reinicie o RStudio**:  CTRL + SHIFT + F10
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="libs/remark-latest.min.js"></script>
