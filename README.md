@@ -2,7 +2,7 @@
 
 ![Arte de divulgação do evento](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/img/arte_meetup.png)
 
-Todas as pessoas participantes devem seguir o [código de conduta da R-Ladies](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct/d41ffc0fb9b8da55413686011e8a27146a9d40a1).
+Todas as pessoas participantes devem seguir o [código de conduta da R-Ladies](https://github.com/rladies/.github/blob/master/CODE_OF_CONDUCT.md#Portuguese).
 
 ## Pré-requisitos:
 

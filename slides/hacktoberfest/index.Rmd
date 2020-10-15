@@ -51,7 +51,7 @@ xaringanExtra::use_logo(
 
 ## O que é a **Hacktoberfest**?
 
-- É uma celebração de __open source__ que ocorre em outubro.
+- É uma celebração do __open source__ que ocorre em outubro.
 
 - A **Hacktoberfest** é aberta para todes!
 
