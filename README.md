@@ -28,7 +28,7 @@ install.packages("usethis")
   
   - [Open Source](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/open_source/) 
   
-  - Introdução ao Git/GitHub - em breve!
+  - [Introdução ao Git e GitHub](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/git_rstudio/git_github.html) 
   
   - [Hacktoberfest](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/) 
   
@@ -36,7 +36,7 @@ install.packages("usethis")
 
 - Tarde:
 
-   - [Contribuindo através da interface web do GitHub]() - Em breve!
+   - [Contribuindo através da interface web do GitHub]()
 
    - [Contribuindo através do RStudio](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/git_rstudio/contribuindo_via_RStudio.html)
    
@@ -62,6 +62,8 @@ install.packages("usethis")
 - [RStudio Cheatsheet](https://www.rstudio.com/wp-content/uploads/2019/01/Cheatsheets_2019.pdf)
 
 ## Contribuindo com as apresentações
+
+Caso você queira contribuir com as apresentações, é necessário instalar os pacotes abaixo:
 
 ```
 install.packages("xaringan", dependencies = TRUE)
