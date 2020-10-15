@@ -1,0 +1,70 @@
+---
+title: "Git e GitHub: o que é um sistema de controle de versão?"
+author: "R-Ladies São Paulo"
+date: "Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`"
+encoding: "UTF-8"
+output:
+  xaringan::moon_reader:
+    seal: true
+    lib_dir: libs
+    chakra: libs/remark-latest.min.js
+    css: [xaringan-themer.css, custom.css]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+#      ratio: 191:100
+glosario:
+   language: 'pt'
+---
+class: middle, center, inverse
+
+```{r, child="configuracao.Rmd"}
+
+```
+
+
+# O que é Git?
+
+---
+
+## Comentários 
+
+- Você pode usar o Git através:
+  -  __Linha de comando__ :
+      - [git](https://git-scm.com/)
+      - terminal do RStudio
+  - __Interfaces gráficas__:
+      - [GitHub Desktop](https://desktop.github.com/)
+      - [Sourcetree](https://www.sourcetreeapp.com/)
+      - Git Pane do RStudio
+      - Entre outros!
+    
+Logo apresentaremos como utilizar através do RStudio, mas escolha o que é mais confortável para você :)
+
+- Independente de qual ferramenta você escolher, é importante qual comando do Git equivale a um "botão" na interface gráfica. É muito importante entender as equivalências!
+
+
+
+---
+class: center, middle 
+
+## Linha de comando ou interface gráfica?
+## Use o que for melhor para **você**!
+
+```{r out.width="50%"}
+knitr::include_graphics("https://media0.giphy.com/media/dNgK7Ws7y176U/giphy.gif")
+```
+
+---
+class: middle, center, inverse
+
+# O que é o GitHub?
+
+---
+class: middle, center
+
+```{r echo=FALSE, out.width="70%"}
+knitr::include_graphics("img/github.PNG")
+```
+
