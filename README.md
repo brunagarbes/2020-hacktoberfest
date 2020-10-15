@@ -22,12 +22,39 @@ install.packages("usethis")
 
 ## Slides
 
-- [R-Ladies São Paulo](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/rladies/)
+- Manhã:
+  
+  - [R-Ladies São Paulo](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/rladies/)
+  
+  - Open Source - em breve!
+  
+  - [Hacktoberfest](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/) -
+  
+  - Introdução ao Git/GitHub - em breve!
+  
+  - [Configurando o Git e GitHub no RStudio](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/git_rstudio/setup_Git_GitHub_RStudio.html)
 
-- Open Source - em breve!
+- Tarde:
 
-- [Hacktoberfest](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/) - em breve!
+   - [Contribuindo através da interface web do GitHub]() - Em breve!
 
-- Introdução ao Git/GitHub - em breve!
+   - [Contribuindo através do RStudio](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/git_rstudio/contribuindo.html)
+   
+   
+   
+   
+## Referências e materias complementares
 
+### Em Português
 
+- [Cheatsheet do Git](https://github.github.com/training-kit/downloads/pt_BR/github-git-cheat-sheet.pdf)!
+
+- Livro [Zen do R](https://curso-r.github.io/zen-do-r/git-github.html), da [Curso-R](https://www.curso-r.com/), escrito por [Caio Lente](https://lente.dev/)
+
+### Em Inglês
+
+- [Palestra](https://youtu.be/ZCeBnQBQ1h8) (em inglês) da [Jenny Bryan](https://jennybryan.org/) sobre o pacote `usethis`.
+
+- Livro [Happy Git and GitHub for the useR](https://happygitwithr.com/), escrito por Jenny Bryan.
+
+- Documentação do pacote [usethis](https://usethis.r-lib.org/reference/create_package.html)
