@@ -1,5 +1,5 @@
 ---
-title: "Git e GitHub: o que é um sistema de controle de versão?"
+title: "Git: o que é um sistema de controle de versão?"
 author: "R-Ladies São Paulo"
 date: "Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`"
 encoding: "UTF-8"
@@ -55,16 +55,3 @@ class: center, middle
 ```{r out.width="50%"}
 knitr::include_graphics("https://media0.giphy.com/media/dNgK7Ws7y176U/giphy.gif")
 ```
-
----
-class: middle, center, inverse
-
-# O que é o GitHub?
-
----
-class: middle, center
-
-```{r echo=FALSE, out.width="70%"}
-knitr::include_graphics("img/github.PNG")
-```
-
