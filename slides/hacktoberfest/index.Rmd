@@ -77,7 +77,75 @@ Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`
 
 - Para ser uma contribuição válida:
 
-**EM BREVE**
+- Precisa ser submetida durante o mês de outubro
+
+- Submetida em um repositório __público__ e:
+  
+  - Para repositórios __sem__ a label `Hacktoberfest`: A pessoa mantenedora do repositório precisa adicionar uma label/rótulo de `hacktoberfest-accepted` no PR
+  
+   - Para repositórios __com__ o tópico `Hacktoberfest`: PR é aprovado ou merged
+
+---
+class: middle
+
+### Como saber se um repositório é público? 
+
+Ele não é privado! __ATENÇÃO:__ Contribuições para repositórios privados NÃO contam para a Hacktoberfest. Exemplo de repositório privado:
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-repo-privado.png")
+```
+
+
+
+
+---
+class: middle
+
+## Repositórios podem ter tópicos. 
+
+Exemplo:
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-repo-topicos.png")
+```
+
+---
+class: middle
+
+## Exemplos de repositórios
+
+.pull-left[
+### __Com__ tópico Hacktoberfest
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-com-topico-hacktoberfest.PNG")
+```
+
+[carpentries/glosario](https://github.com/carpentries/glosario)
+]
+
+.pull-right[
+### __Sem__ tópico Hacktoberfest
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-sem-topico-hacktoberfest.PNG")
+```
+
+[R-Ladies-Sao-Paulo/xaringan](https://github.com/R-Ladies-Sao-Paulo/xaringan)
+]
+
+
+---
+class: middle
+
+## Pull Requests (PRs) podem ter labels
+
+Exemplo de Pull Request com label/rótulo de `hacktoberfest-accepted`:
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-PR-label-hacktoberfest-accepted.PNG")
+```
 
 
 ---
@@ -86,7 +154,7 @@ Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`
 - No site da __Hacktoberfest__, clique em [Start Hacking](https://hacktoberfest.digitalocean.com/login)
 
 
-```{r echo=FALSE, fig.align='center', out.width="80%"}
+```{r echo=FALSE, fig.align='center', out.width="100%"}
 knitr::include_graphics("img/start_hacking.jpeg")
 ```
 
@@ -144,7 +212,7 @@ knitr::include_graphics("img/explicacao-contribuicao.png")
 
 - ![](https://hacktoberfest.digitalocean.com/assets/icon-light-pending-582457b485f011e10472cf119054f1d8891ae3eed9f6ae7beae19150dcb4ca95.svg)  __Em Revisão__: Seu PR foi aceito por uma pessoa mantenedora e atualmente está dentro do período de revisão, que dura quatorze dias. 
 
-- ![](https://hacktoberfest.digitalocean.com/assets/icon-light-unaccepted-96a3930bd7cc38d7096f1eb28ce184bb18b624bad00079954c644f3e315a559b.svg)  __Pendente__: Seu PR ainda não foi aceito por uma pessoa mantenedora. Uma mantenedora pode aceitar seu PR caso faça o `merge`, adicionando o rótulo "hacktoberfest-aceito" ou aprovando-o. 
+- ![](https://hacktoberfest.digitalocean.com/assets/icon-light-unaccepted-96a3930bd7cc38d7096f1eb28ce184bb18b624bad00079954c644f3e315a559b.svg)  __Pendente__: Seu PR ainda não foi aceito por uma pessoa mantenedora. Uma mantenedora pode aceitar seu PR caso faça o `merge`, adicionando o rótulo "hacktoberfest-accepted" ou aprovando-o. 
 
 - ![](https://hacktoberfest.digitalocean.com/assets/icon-light-invalid-65ff290db8df3c5390866ba4d2e838a61002c1cba601b03e43dd2782ad47840d.svg)  __Inválido__: Seu PR foi rotulado como "inválido" ou "spam" por uma mantenedora e não contará para a Hacktoberfest.
 
@@ -153,7 +221,7 @@ knitr::include_graphics("img/explicacao-contribuicao.png")
 ## Legenda (parte 2!)
 
 
-- ![](https://hacktoberfest.digitalocean.com/assets/icon-light-ineligible-4640f9976727559d4dfb33259eda6bb469ed64926da95709549ae8f6266f2a95.svg) __Repositório não elegível__: Seu PR foi enviado para um repositório que não está participando da Hacktoberfest. As mantenedoras do repositório podem adicionar o rótulo "hacktoberfest" ao seu repositório se desejarem participar. Alternativamente, um PR individual pode ser optado por uma mantenedora adicionando o rótulo "hacktoberfest-aceito" ao PR. 
+- ![](https://hacktoberfest.digitalocean.com/assets/icon-light-ineligible-4640f9976727559d4dfb33259eda6bb469ed64926da95709549ae8f6266f2a95.svg) __Repositório não elegível__: Seu PR foi enviado para um repositório que não está participando da Hacktoberfest. As mantenedoras do repositório podem adicionar o tópico "hacktoberfest" ao seu repositório se desejarem participar. Alternativamente, um PR individual pode ser optado por uma mantenedora adicionando o rótulo "hacktoberfest-aceito" ao PR. 
 
 
 - ![](https://hacktoberfest.digitalocean.com/assets/icon-light-eligible-10af2173b253295e62295a5a9a4e13cb03ef63e0f71c378d16700ff3abc9156f.svg) __Aceito__: Parabéns! Seu PR passou no período de revisão e conta para a conclusão do desafio da Hacktoberfest!
