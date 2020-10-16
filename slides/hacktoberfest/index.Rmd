@@ -12,12 +12,36 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+#      ratio: 191:100
 ---
 class: title-slide, center
-background-image: url("https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/img/hf2020-background.png")
+background-image: url("https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/img/arte_meetup.png")
 background-position: center
 background-size: contain
 
+```{r metathis, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_name("github-repo" = "R-Ladies-Sao-Paulo/2020-hacktoberfest") %>% 
+  meta_social(
+    title = "Hacktoberfest 2020 + R-Ladies São Paulo",
+    description = paste(
+      "Apresentação sobre ",
+      "como participar da Hacktoberfest 2020."
+    ),
+    url = "https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/",
+    image = "https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/img/share-card.png",
+    image_alt = paste(
+      "Primeiro slide da apresentação sobre ",
+      "como participar da Hacktoberfest 2020.",
+      "Apresentado por Angélica Custódio."
+    ),
+    og_type = "website",
+    og_author = c("Beatriz Milz", "Angélica Custódio"),
+    twitter_card_type = "summary_large_image",
+    twitter_creator = c("@beamilz", "@angcustodio")
+  )
+```
 
 ```{r eval=FALSE, include=FALSE}
 #devtools::install_github("hadley/emo", dependencies = TRUE)
@@ -50,7 +74,7 @@ xaringanExtra::use_logo(
 ```
 
 
- R-Ladies São Paulo
+ <!-- R-Ladies São Paulo -->
 
 
 Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`
@@ -235,3 +259,31 @@ class: inverse, center, middle
 
 
 Caso tenha dúvidas, veja as [perguntas frequentes](https://hacktoberfest.digitalocean.com/faq)!
+
+
+Apresentação feita com <i class="fab fa-r-project"></i> e os pacotes [xaringan](https://github.com/yihui/xaringan) + [xaringanthemer](https://pkg.garrickadenbuie.com/xaringanthemer/) e [xaringanExtra](https://pkg.garrickadenbuie.com/xaringanExtra/), por:
+
+ Beatriz Milz
+<!-- <a href='https://beatrizmilz.com'><i class="fas fa-house-user"></i></a> -->
+<!-- <a href='mailto:beatriz.milz@usp.br'><i class="far fa-envelope"></i></a> -->
+<a href='https://twitter.com/BeaMilz'  target="_blank"><i class="fab fa-twitter"></i></a>
+<!-- <a href='https://github.com/beatrizmilz' target="_blank"><i class="fab fa-github"></i></a> -->
+<!-- <a href='https://orcid.org/0000-0002-3064-4486' target="_blank"><i class="fab fa-orcid"></i></a> -->
+<!-- <a href='http://lattes.cnpq.br/5150665880581477' target="_blank"><i class="ai ai-lattes"></i></a> <a href='https://beatrizmilz.github.io/resume/index.html' target="_blank"><i class="ai ai-cv"></i></a> -->
+<!-- <a href='https://discourse.curso-r.com/u/beatrizmilz/summary' target="_blank"><i class="fab fa-discourse"></i></a>  -->
+<!-- <a href='https://www.instagram.com/beatrizmilz/' target="_blank"><i class="fab fa-instagram"></i></a>  -->
+
+ Angélica Custódio
+<a href='https://twitter.com/angcustodio'  target="_blank"><i class="fab fa-twitter"></i></a>
+
+ Jean Prado
+<a href='https://twitter.com/jeangprado'  target="_blank"><i class="fab fa-twitter"></i></a>
+
+
+  
+<!-- inicio font awesome -->
+<script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
+<!-- final font awesome -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
