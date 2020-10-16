@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Contribuindo através da interface gráfica do RStudio</title>
+    <title>Contribuindo através da interface web do GitHub</title>
     <meta charset="utf-8" />
     <meta name="author" content="R-Ladies São Paulo" />
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
     <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xf0b36684ccb4b8186cf3464c578482b","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x2b6745aa1a7460e9dbec765500e2999","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -30,13 +30,13 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Contribuindo através da interface gráfica do RStudio
+# Contribuindo através da interface web do GitHub
 ### R-Ladies São Paulo
 ### Atualizado em 16/10/2020
 
 ---
 
-class: middle, center, inverse
+class: middle, center
 
 
 
@@ -64,7 +64,7 @@ top:1em;right:1em;
         setTimeout(addLogo, 100)
       }
     } else {
-      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+      document.querySelectorAll('.remark-slide-content:not(.hide-logo)')
         .forEach(function (slide) {
           const logo = document.createElement('a')
           logo.classList = 'xaringan-extra-logo'
@@ -89,287 +89,51 @@ top:1em;right:1em;
 
 
 
-# Interface gráfica do RStudio
 
----
-class: middle
+- Contribuímos diretamente do navegador, através do site do GitHub!
 
-## Interface Gráfica RStudio
+- Não é necessário instalar o Git no computador.
 
-- O RStudio oferece um cliente Git **simples**, na aba "Git" (em inglês, é chamado de Git Pane).
+- Útil para __contribuições mais simples__, exemplo:
 
-- Esse painel somente aparecerá em projetos que estejam versionados com Git.
+  - Listas
 
-&lt;img src="img/prints/git-pane.PNG" width="95%" style="display: block; margin: auto;" /&gt;
+  - Textos marcados com Markdown
 
----
-
-## Equivalência dos principais comandos
-
-### Linha de comando vs RStudio
-
-- git status
-
-- git add [arquivo]
-
-- git commit -m "[mensagem descritiva]"
-
-- git diff
-
-- git pull
-
-- git push
-
-- ...
+  - Traduções
+  
+  
 
 
 ---
-class: middle
 
-## Git pane - Staged  ✅
+## Escolha um repositório!
 
-&lt;img src="img/prints/git-pane-stage.png" width="963" style="display: block; margin: auto;" /&gt;
+Neste exemplo usaremos [este repositório](https://github.com/PyLadiesSP/Cursos) com materiais da PyLadies SP.
 
----
-class: middle
-
-## Git pane - Commit
-
-&lt;img src="img/prints/git-pane-commit.PNG" width="100%" style="display: block; margin: auto;" /&gt;
-
----
-class: middle
-
-## Git pane - Commit
-
-&lt;img src="img/prints/git_commit.PNG" width="100%" style="display: block; margin: auto;" /&gt;
-
-
----
-class: middle
-
-## Botão Diff -&gt; Review changes
-
-&lt;img src="img/prints/git-pane-diff.PNG" width="90%" style="display: block; margin: auto;" /&gt;
-
----
-class: middle
-
-## Botão 🕒 (history) -&gt; Review changes
-
-&lt;img src="img/prints/git-pane-history.PNG" width="90%" style="display: block; margin: auto;" /&gt;
-
-
----
-class: middle
-
-## Branch
-
-&lt;img src="img/prints/git-pane-branch.png" width="960" style="display: block; margin: auto;" /&gt;
-
-
----
-class: middle
-
-## Interface Gráfica RStudio
-
-&lt;img src="img/prints/cheatsheet.PNG" width="95%" style="display: block; margin: auto;" /&gt;
-
-Fonte: [RStudio Cheatsheet](https://www.rstudio.com/wp-content/uploads/2019/01/Cheatsheets_2019.pdf)
-
-
----
-class: middle, center, inverse
-
-# Trabalhando com projetos no RStudio + GitHub
-
---
-
-## 👩‍💻 No computador
-
----
-##  **Clonando um repositório do GitHub**
-
-- [Crie um repositório no GitHub](https://github.com/new), ou abra a página de um repositório já existente. 
-
-.pull-left[
-- Criando um repositório no GitHub:
-
-&lt;img src="img/prints/novo-repo.PNG" width="80%" style="display: block; margin: auto;" /&gt;
-
-]
-
-.pull-right[
-
-Se o repositório não for "seu", faça um fork primeiro, e clone o seu fork. 
-
-&lt;img src="img/prints/fork.png" width="100%" style="display: block; margin: auto;" /&gt;
-
-]
-
-
-
-
-
-
----
-class: middle
-
-- No RStudio, crie um novo projeto: File &gt; New Project 
-.pull-left[
-- Na aba "Create Project", selecione a opção **Version Control**.
-
-&lt;img src="img/prints/proj-version-control-1.PNG" width="100%" style="display: block; margin: auto;" /&gt;
-]
-
-.pull-right[
-
-- Na aba "Create Project from Version Control", selecione a opção **Git**.
-&lt;img src="img/prints/proj-version-control-2.png" width="100%" style="display: block; margin: auto;" /&gt;
-]
-
-
-
-
----
-- Na aba "Clone Git Repository":
-  - **Repository URL**: Cole o link para o repositório
-  - **Project directory name**: Após inserir o repository URL, esse campo será preenchido automaticamente.
-  - **Create project as subdirectory of**: Selecione o diretório onde você deseja manter sua cópia local do repositório.
-&lt;img src="img/prints/proj-version-control-3.png" width="50%" style="display: block; margin: auto;" /&gt;
-
-- O **RStudio** irá fazer o clone do repositório, e abrirá um RProj para ele (caso não exista um ainda, será criado).
-
----
-
-### Função para criar um arquivo `README`:
-
-
-- Em Markdown: `README.md`
-
-```r
-usethis::use_readme_md()
-```
-
-- Em R Markdown: `README.Rmd` - precisa sempre ser compilado ao `.md`
-
-```r
-usethis::use_readme_rmd()
-```
-
-- O arquivo será criado e aberto, para ser editado e salvo.
-
-&lt;img src="https://media2.giphy.com/media/1iu8uG2cjYFZS6wTxv/giphy-downsized.gif" width="30%" style="display: block; margin: auto;" /&gt;
-
-
----
-class: middle  bg-main4
-
-### Exemplo:
-
-&lt;img src="img/gifs/create-proj2.gif" width="100%" style="display: block; margin: auto;" /&gt;
-
-.minirodape[Caso você esteja vendo a versão em PDF, o video acima não irá funcionar. Veja clicando [neste link](https://beatrizmilz.github.io/slidesR/git_rstudio/img/gifs/create-proj2.gif).]
-
-
----
-### Crie uma branch
-
-- Antes de fazer qualquer modificação, crie uma branch, usando a função `usethis::pr_init(branch = "nome_da_branch")`. 
-- Argumento importante: `branch =` indica o nome da branch que você quer criar. 
-
-
-```r
-usethis::pr_init(branch = "teste")
-
-# ✔ Checking that local branch 'master' has the changes in 'origin/master'
-# ✔ Creating local PR branch 'teste'
-# ✔ Switching to branch 'teste'
-# ● Use `pr_push()` to create PR
-```
-
----
-### Faça alterações e commits
-
-- Faça suas contribuições, e sempre faça commits com mensagens que deixem claro as mudanças.
-
-- Quando terminar as contribuições necessárias, utilizar a função `pr_push()`:
-
-
-```r
-pr_push()
-# ✔ Pushing local 'teste' branch to 'origin:teste'
-# ✔ Setting upstream tracking branch for 'teste' to 'origin/teste'
-# ✔ Create PR at link given below
-# ✔ Opening URL 'https://github.com/beatrizmilz/RLadies-Git-RStudio-2019/compare/teste'
-```
-
-- A página do GitHub será aberta, para que possa completar o Pull Request.
-
----
-class: middle 
-
-### Crie um Pull Request: 
-&lt;img src="img/prints/pr-push.PNG" width="80%" style="display: block; margin: auto;" /&gt;
-
----
-class: middle 
-
-### Open a Pull Request: 
-&lt;img src="img/prints/pr-push2.png" width="80%" style="display: block; margin: auto;" /&gt;
-
----
-
-
-### Exemplo: PR foi aberto
-
-&lt;img src="img/prints/pr-push3.png" width="80%" style="display: block; margin: auto;" /&gt;
-
-- Depois dessa etapa, você deve esperar a pessoa que mantém o repositório responder fazendo sugestões para melhorias, aceitando seu PR, etc.
+&lt;img src="img/exemplo-contribuir-via-web.PNG" width="100%" style="display: block; margin: auto;" /&gt;
 
 
 ---
 
-### Modificar o PR
-
-- Alguém fez uma sugestão, como alterar o PR enviado? Ex:
-
-&lt;img src="img/prints/sugestoes-git.PNG" width="70%" style="display: block; margin: auto;" /&gt;
-- No mesmo projeto e na __mesma branch__ que você usou para enviar o PR, faça as alterações.
-
-- Selecione o arquivo modificado para deixá-lo disponível para criar um Commit. Faça o commit.
-
-- Para enviar o novo commit, use o Git Push (aperte a seta verde para cima no painel do Git do RStudio).
+## Escolha um arquivo para contribuir
 
 
-
+&lt;img src="img/exemplo-contribuir-via-web-escolha-arquivo.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 
 ---
 
-### Depois que o PR é aceito:  Merged
+## Vamos contribuir no arquivo [README.MD](https://github.com/PyLadiesSP/Cursos/blob/master/README.md)
 
-&lt;img src="img/prints/pr-push4.PNG" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/exemplo-contribuir-via-web-lapis.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
-class: middle 
+class: middle, hide-logo
 
-### Última etapa: __APÓS__ o PR ter sido aceito (merged)
+&gt; "Você está fazendo alterações em um projeto ao qual não tem acesso para escrever. __Nós criamos um fork deste projeto__ para você enviar as alterações propostas. O envio de uma alteração a gravará em um novo branch em seu fork, para que você possa enviar um Pull Request."
 
-- A função `pr_finish()`:
-  - Retorna para master
-  - Atualiza (usando o pull) o conteúdo 
-  - Deleta a branch criada para enviar o PR
-
-
-```r
-pr_finish()
-# ✔ Switching back to 'master' branch
-# ✔ Pulling changes from GitHub source repo 'origin/master'
-# ✔ Deleting local 'teste' branch
-```
-
-- Pronto!
+&lt;img src="img/exemplo-contribuir-via-web-apos-lapis.png" width="100%" style="display: block; margin: auto;" /&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="libs/remark-latest.min.js"></script>

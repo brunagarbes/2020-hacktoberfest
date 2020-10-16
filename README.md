@@ -20,6 +20,14 @@ Todas as pessoas participantes devem seguir o [código de conduta da R-Ladies](h
 install.packages("usethis")
 ```
 
+
+## Links úteis
+
+- Participantes, adicionem os PRs realizados durante o evento [nesta issue](https://github.com/R-Ladies-Sao-Paulo/2020-hacktoberfest/issues/2).
+
+- EM BREVE: Lista de repositórios sugeridos para participar durante este workshop.
+
+
 ## Slides
 
 - Manhã:
@@ -38,9 +46,9 @@ install.packages("usethis")
 
 - Tarde:
 
-   - [Contribuindo através da interface web do GitHub]()
+   - [Contribuindo através da interface web do GitHub](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/git_rstudio/contribuindo_via_github.html)
 
-   - [Contribuindo através do RStudio](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/git_rstudio/contribuindo_via_RStudio.html)
+   - [Contribuindo através da interface gráfica do RStudio](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/git_rstudio/contribuindo_via_RStudio.html)
    
    
    
