@@ -76,3 +76,65 @@ class: middle, hide-logo
 ```{r echo=FALSE, fig.align='center', out.width="100%"}
 knitr::include_graphics("img/exemplo-contribuir-via-web-apos-lapis.png")
 ```
+
+---
+class: middle 
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo_edit-file.PNG")
+```
+
+---
+class: middle 
+
+Faça uma alteração na aba `edit file`:
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo_edit-file_com_alteracao.PNG")
+```
+
+---
+class: middle 
+
+Veja como a alteração aparecerá, na aba `preview`:
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo_preview-file.PNG")
+```
+
+---
+class: middle, hide-logo 
+
+Ao final da página, escreva uma mensagem de commit - que resuma suas contribuições, e aperte o botão `Propose changes` (a tradução seria 'propor mudanças'):
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-mensagem-commit.png")
+```
+
+---
+class: middle, hide-logo 
+
+Após conferir se as mudanças estão corretas, clique no botão 'Create pull request':
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-pull-request.png")
+```
+
+---
+class: middle, hide-logo 
+
+Descreva do que se trata sua contribuição, e então clique em `Create pull request`.
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo_open-pull-request.png")
+```
+
+
+---
+class: middle, hide-logo 
+
+O PR foi criado! Agora é só esperar a pessoa mantenedora avaliar. 
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-pr_criado.PNG")
+```
