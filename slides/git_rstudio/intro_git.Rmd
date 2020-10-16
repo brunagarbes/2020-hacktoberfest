@@ -24,7 +24,23 @@ class: middle, center, inverse
 ```
 
 
-# O que é Git?
+
+exemplo interessante: trabalho academico versão 1 , 2 , 5234423, final final
+
+
+---
+class: hide-logo
+
+
+- [Sistema de controle de versão](https://glosario.carpentries.org/pt/): Um sistema para gerenciar as mudanças feitas em um software durante o seu desenvolvimento.
+
+
+
+---
+
+## O que é Git?
+
+
 
 ---
 
