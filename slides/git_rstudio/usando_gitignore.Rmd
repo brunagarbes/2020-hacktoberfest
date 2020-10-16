@@ -1,0 +1,47 @@
+---
+title: ".gitignore: só versione o que realmente interessa"
+author: "R-Ladies São Paulo"
+date: "Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`"
+encoding: "UTF-8"
+output:
+  xaringan::moon_reader:
+    seal: true
+    lib_dir: libs
+    chakra: libs/remark-latest.min.js
+    css: [xaringan-themer.css, custom.css]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+#      ratio: 191:100
+glosario:
+   language: 'pt'
+---
+class: middle, center, inverse
+
+```{r, child="configuracao.Rmd"}
+
+```
+
+
+# O que é um arquivo .gitignore?
+
+---
+
+## Comentários 
+
+- É um arquivo de texto que diz ao git quais arquivos (ou padrões) ele deve ignorar. 
+
+- Geralmente ele é usado para evitar o envio de arquivos temporários de seu diretório de trabalho que não são úteis para outros colaboradores, como produtos de compilação, arquivos temporários criados por IDEs, etc.
+
+- Um exemplo são os arquivos com a extensão .RProj que são criados quando trabalhamos com projetos no RStudio.
+    
+---
+class: center, middle 
+
+## Exemplo de um arquivo .gitignore
+
+
+```{r echo=FALSE, out.width="70%"}
+knitr::include_graphics("img/prints/exemple_gitignore_file.png")
+```
