@@ -54,7 +54,7 @@ meta() %>%
       "Apresentação sobre Open Source"
     ),
     url = "https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/open_source/",
-    image = "https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/img/share-card.png",
+    image = "https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/img/Open.jpg",
     image_alt = paste(
       "Primeiro slide da apresentação sobre ",
       "open source e a colaboração.",
