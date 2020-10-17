@@ -51,10 +51,10 @@ meta() %>%
   meta_social(
     title = "R-Ladies São Paulo na Hacktoberfest 2020 - Open Source e a colaboração",
     description = paste(
-      "Apresentação sobre Open Source"
+      "Apresentação sobre Open Source e o ecossistema de colaboração"
     ),
     url = "https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/open_source/",
-    image = "https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/open_source/img/Open.jpg",
+    image = "https://github.com/R-Ladies-Sao-Paulo/2020-hacktoberfest/tree/master/slides/open_source/img/Open.jpg",
     image_alt = paste(
       "Primeiro slide da apresentação sobre ",
       "open source e a colaboração.",
