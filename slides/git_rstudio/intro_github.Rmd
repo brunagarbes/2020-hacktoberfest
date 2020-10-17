@@ -25,7 +25,9 @@ class: middle, center, inverse
 
 
 # O que é Github?
+--
 
+## Uma introdução!
 ---
 class: hide-logo, center, middle
 
@@ -58,7 +60,7 @@ knitr::include_graphics("img/github.PNG")
 
 - Arquivos podem ser vistos e comparados com versões anteriores
 
-- GitHub Pages: pequenos websites podem ser feitos.
+- GitHub Pages: websites estáticos podem ser feitos.
 
 
 ---
@@ -71,7 +73,7 @@ knitr::include_graphics("img/github2.jpeg")
 
 ---
 
-## Criando um Repositório
+## Criando um Repositório seu
 
 ```{r echo=FALSE, out.width="70%"}
 knitr::include_graphics("img/github4.jpeg")
@@ -79,7 +81,7 @@ knitr::include_graphics("img/github4.jpeg")
 
 ---
 
-## Contribuindo em um Repositório
+## Repositórios
 
 ```{r echo=FALSE, out.width="90%"}
 knitr::include_graphics("img/github3.jpeg")
@@ -87,9 +89,51 @@ knitr::include_graphics("img/github3.jpeg")
 
 ---
 
+## Issues do repositório
+
+- Sugestões de melhorias, erros encontrados, etc.
+
+```{r echo=FALSE, out.width="90%"}
+knitr::include_graphics("img/lista-issues.PNG")
+```
+
+Exemplo das issues do repositório [carpentries/glosario](https://github.com/carpentries/glosario/issues).
+
+
+---
+
+## Pull Requests do repositório
+
+- Contribuição com __CÓDIGOS__ envolvendo melhorias, arrumando erros encontrados, etc.
+
+```{r echo=FALSE, out.width="90%"}
+knitr::include_graphics("img/lista-pull-requests.PNG")
+```
+
+Exemplo dos pull requests do repositório [carpentries/glosario](https://github.com/carpentries/glosario/issues).
+
+---
+
+## Projetos do repositório
+
+- É interessante para organizar as tarefas! 
+
+- Possível marcar:
+  - pessoas usando `@nomeusuarie`,
+  - issues e PRs do repositório usando `#1` (substitua o 1 pelo número do PR ou Issue)
+  - issues e PRs de outros repositórios utilizando o final da url, por exemplo `gabrielacaesar/segurancaSP/issues/13`.
+
+```{r echo=FALSE, out.width="90%"}
+knitr::include_graphics("img/projetos-repo.PNG")
+```
+
+
+
+---
+
 ## Fork em um Repositório
 
-Fazendo o Fork
+Fazendo o Fork do repositório __de outra pessoa__ cria uma cópia deste repositório na sua conta, para que você possa trabalhar na sua contribuição e enviá-la depois.
 
 ```{r echo=FALSE, out.width="90%"}
 knitr::include_graphics("img/fork.png")
@@ -137,6 +181,15 @@ knitr::include_graphics("img/github8.jpeg")
 
 ---
 
+## Revisão e sugestões no conteúdo dos PRs
+
+```{r echo=FALSE, out.width="80%"}
+knitr::include_graphics("img/review_pr.PNG")
+```
+
+
+---
+
 ## Histórico de commits
 
 
@@ -174,7 +227,7 @@ knitr::include_graphics("img/github15.jpeg")
 
 ---
 
-## Github Page
+## Github Pages
 
 
 ```{r echo=FALSE, out.width="100%"}
@@ -183,7 +236,7 @@ knitr::include_graphics("img/github12.png")
 
 ---
 
-## Github Page
+## Github Pages
 
 
 ```{r echo=FALSE, out.width="100%"}
@@ -193,9 +246,17 @@ knitr::include_graphics("img/github13.jpeg")
 
 ---
 
-## Github também é rede social
+## É possível seguir pessoas e projetos
 
+É uma forma de acompanhar o que as pessoas da comunidade tem feito!
 
 ```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("img/github14.jpeg")
 ```
+
+---
+class: inverse, middle, center
+
+## E muito mais!
+
+

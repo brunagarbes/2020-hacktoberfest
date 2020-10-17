@@ -7,7 +7,7 @@ Organização e mentoria:
 - Angélica Custódio
 - Bruna Garbes
 - Jean Prado
-
+- Diego Rabatone
 
 Preparação:
 - Renata Hirota e Nicole Luduvice
