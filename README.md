@@ -23,9 +23,9 @@ install.packages("usethis")
 
 ## Links úteis
 
-- Participantes, adicionem os PRs realizados durante o evento [nesta issue](https://github.com/R-Ladies-Sao-Paulo/2020-hacktoberfest/issues/2).
+- [Participantes, adicionem os PRs realizados durante o evento nesta issue](https://github.com/R-Ladies-Sao-Paulo/2020-hacktoberfest/issues/2).
 
-- Lista de repositórios sugeridos para participar durante este workshop.
+- [Lista de repositórios sugeridos para participar durante este workshop](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/projetos.html).
 
 
 ## Slides
