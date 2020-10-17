@@ -16,7 +16,9 @@ output:
 #      ratio: 191:100
 glosario:
    language: 'pt'
+
 ---
+
 class: middle, center, inverse
 
 ```{r, child="configuracao.Rmd"}
@@ -97,3 +99,100 @@ class: center, middle
 ```{r out.width="50%"}
 knitr::include_graphics("https://media0.giphy.com/media/dNgK7Ws7y176U/giphy.gif")
 ```
+
+---
+## Branch
+
+É uma série independente de *commits*, que pode ser usada para criar novas funcionalidades, etc.
+
+*Branch master*: é o ramo principal
+
+Demais *branches*: derivam da master e podem retornar a ela depois
+
+
+```{r out.width="50%"}
+knitr::include_graphics("img/branch.jpeg")
+```
+
+
+---
+## Commit
+
+É o ato de enviar / fazer um upload dos códigos na sua *branch*.
+
+Sempre precisa de uma mensagem breve explicando o que foi feito.
+
+Dica: Faça *commits* incrementais!
+
+```{r out.width="80%"}
+knitr::include_graphics("img/commit.png")
+```
+
+---
+## Checkout
+
+Muda para outra *branch*.
+
+Antes de trocar de branch verifica se há alteração não "commitada" nos arquivos, se existir, ele dá um alerta e não troca de branch até você resolver o que fazer.
+
+```{r out.width="60%"}
+knitr::include_graphics("img/checkout.jpg")
+```
+
+
+
+---
+## Issue
+
+Usada para:
+- discutir funcionalidades,
+- reportar e monitorar bugs,
+- sugerir melhorias,
+- etc.
+
+```{r out.width="50%"}
+knitr::include_graphics("https://media.giphy.com/media/ekje2HEQqJW7cE9SIJ/giphy.gif")
+```
+
+
+---
+## Wiki
+
+Desenvolvido originalmente por [Ward Cunningham](https://pt.wikipedia.org/wiki/Ward_Cunningham)
+
+é um importante recurso de documentação dos projetos.
+
+<br>
+<br> 
+
+```{r out.width="50%"}
+knitr::include_graphics("img/wiki.gif")
+```
+
+
+---
+## Readme.md
+
+Arquivo que apresenta o projeto e informações adicionais.
+
+- como instalar,
+- como usar o código,
+- como fazer contribuições com o projeto, 
+- etc.
+
+```{r out.width="50%"}
+knitr::include_graphics("https://media.giphy.com/media/l4FGJfimoW3Cl6gDK/giphy.gif")
+```
+
+
+---
+class: center
+
+## Dicas
+
+[GIT CHEAT SHEET](https://education.github.com/git-cheat-sheet-education.pdf)
+
+```{r echo=FALSE, fig.align='center', out.width="40%"}
+knitr::include_graphics("img/zine.png")
+```
+
