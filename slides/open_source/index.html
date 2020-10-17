@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Open Source</title>
+    <title>Open Source e a colaboração</title>
     <meta charset="utf-8" />
-    <meta name="author" content="R-Ladies São Paulo" />
-    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
-    <script src="libs/tile-view/tile-view.js"></script>
-    <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
-    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
-    <script src="libs/clipboard/clipboard.min.js"></script>
-    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
-    <script src="libs/shareon/shareon.min.js"></script>
-    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
-    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <meta name="author" content="Haydée Svab" />
+    <meta name="github-repo" content="R-Ladies-Sao-Paulo/2020-hacktoberfest"/>
+    <meta name="twitter:title" content="R-Ladies São Paulo na Hacktoberfest 2020 - Open Source e a colaboração"/>
+    <meta name="twitter:description" content="Apresentação sobre Open Source"/>
+    <meta name="twitter:url" content="https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/open_source/"/>
+    <meta name="twitter:image:src" content="https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/img/share-card.png"/>
+    <meta name="twitter:image:alt" content="Primeiro slide da apresentação sobre  open source e a colaboração. Apresentado por Haydée Svab."/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@hsvab"/>
+    <meta name="twitter:site" content="@hsvab"/>
+    <meta property="og:title" content="R-Ladies São Paulo na Hacktoberfest 2020 - Open Source e a colaboração"/>
+    <meta property="og:description" content="Apresentação sobre Open Source"/>
+    <meta property="og:url" content="https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/open_source/"/>
+    <meta property="og:image" content="https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/img/share-card.png"/>
+    <meta property="og:image:alt" content="Primeiro slide da apresentação sobre  open source e a colaboração. Apresentado por Haydée Svab."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="article:author" content="Haydée Svab"/>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom.css" type="text/css" />
   </head>
@@ -20,14 +28,14 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Open Source
-### R-Ladies São Paulo
-### Atualizado em 15/10/2020
+# Open Source e a colaboração
+## RLadies São Paulo na Hacktoberfest 2020
+### Haydée Svab
+### Outubro/2020
 
 ---
 
-class: middle, center, inverse
-
+class: center
 
 
 
@@ -38,7 +46,7 @@ class: middle, center, inverse
 width: 110px;
 height: 128px;
 z-index: 0;
-background-image: url(img/rainbow-inclusive.png);
+background-image: url(img/Icon.png);
 background-size: contain;
 background-repeat: no-repeat;
 position: absolute;
@@ -58,7 +66,7 @@ top:1em;right:1em;
         .forEach(function (slide) {
           const logo = document.createElement('a')
           logo.classList = 'xaringan-extra-logo'
-          logo.href = 'https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil'
+          logo.href = 'https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/'
           slide.appendChild(logo)
         })
     }
@@ -69,24 +77,226 @@ top:1em;right:1em;
 
 
 
-&lt;!-- inicio font awesome --&gt;
-&lt;script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"&gt;&lt;/script&gt;
-&lt;!-- final font awesome --&gt;
+## Free/Libre Open Source Software
 
-&lt;!-- inicio github buttons  --&gt;
-&lt;script async defer src="https://buttons.github.io/buttons.js"&gt;&lt;/script&gt;
-&lt;!-- final github buttons  --&gt;
+&lt;img src="img/free_and_open_source_logo_by_doctormo_d38z7tl.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+[Fonte da imagem: Deviantart](https://www.deviantart.com/doctormo/art/Free-and-Open-Source-Logo-196478553)
+---
+
+class: center
+## As 4 liberdades do SL
+
+&lt;img src="img/4liberdades.png" width="105%" style="display: block; margin: auto;" /&gt;
 
 
-
-slide com classe inverse é útil para separar conteúdos
+&lt;img src="img/Heckert_GNU_white.svg" width="15%" style="display: block; margin: auto;" /&gt;
 
 ---
 
-texto texto texto
+class: center
+## It is about freedom
+
+&lt;img src="img/Quotefancy-1104315-3840x2160.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: center
+## A Iniciativa Open Source
+
+&lt;img src="img/Opensource.svg" width="45%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: 
+## Definição de Código Aberto
+
+
+A Definição de Código Aberto foi originalmente derivada do [Debian Free Software Guidelines](https://www.debian.org/social_contract#guidelines):
+
+1. Redistribuição livre
+2. Acesso ao código fonte e distribuição do mesmo, também na forma compilada
+3. Permissão para fazer modificações e trabalhos derivados
+4. Integridade do código-fonte do autor
+&lt;!--(A licença pode restringir o código-fonte de ser distribuído na forma modificada apenas se a licença permitir a distribuição de "arquivos de patch" com o código-fonte com o propósito de modificar o programa no momento da construção.)--&gt;
+5. Sem discriminação contra pessoas ou grupos
+6. Sem discriminação contra campos de atuação
+7. Distribuição de licença 
+&lt;!--(Os direitos vinculados ao programa devem se aplicar a todos a quem o programa é redistribuído sem a necessidade de execução)--&gt;
+8. A licença não deve ser específica para um produto
+&lt;!--(Os direitos associados ao programa não devem depender do programa ser parte de uma distribuição de software específica. Se o programa for extraído dessa distribuição e usado ou distribuído dentro dos termos da licença do programa, todas as partes para as quais o programa é redistribuído devem ter os mesmos direitos que aqueles concedidos em conjunto com a distribuição original do software.)--&gt;
+9. A licença não deve restringir outro software
+&lt;!--(A licença não deve impor restrições a outro software distribuído junto com o software licenciado. Por exemplo, a licença não deve exigir que todos os outros programas distribuídos no mesmo meio sejam software de código aberto.)--&gt;
+10. A licença deve ser neutra em termos de tecnologia
+&lt;!--(Nenhuma disposição da licença pode ser baseada em qualquer tecnologia individual ou estilo de interface.)--&gt;
+
+
+---
+
+class: center
+## Movimento e Cultura
+
+&lt;img src="img/Open.jpg" width="85%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+class: center
+## Recursos Educacionais
+
+&lt;img src="img/Global_Open_Educational_Resources_Logo.svg" width="40%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="img/REA.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+Fontes das Imagens: [OER - Wikipedia-en](https://en.wikipedia.org/wiki/Open_educational_resources) e [REA PPGEL-UFRN](https://sites.google.com/site/glossarioestudosdeletramento/home/recursos-educacionais-abertos---rea)
+
+---
+
+class: center
+## Recursos Educacionais
+
+&lt;img src="img/moodle.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="img/uab.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+Fontes das Imagens: [Moodle - IFMG](https://www.ifmg.edu.br/ourobranco/noticias/curso-do-moodle-esta-disponivel-para-os-alunos-do-campus-ouro-branco) e [REA UAB](https://repositorioaberto.uab.pt/handle/10400.2/4664)
+
+---
+
+
+class: center
+## Ciência
+
+&lt;img src="img/20-Open-Science.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="img/ciencia_aberta_fiocruz.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+Fontes das imagens [The American Ceramic Society](https://ceramics.org/ceramic-tech-today/acers-news/open-science-open-access-projekt-deal-and-ijces)
+e [FioCruz](https://mooc.campusvirtual.fiocruz.br/rea/ciencia-aberta/serie1/curso1/aula1.html)
+
+---
+
+
+class: center
+## Ciência
+
+&lt;img src="img/jornalusp.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+--
+&lt;img src="img/OSHub_logo.png" width="35%" style="display: block; margin: auto;" /&gt;
+
+Fontes das imagens: [Jornal da USP](https://jornal.usp.br/universidade/revistas-cientificas-liberam-acesso-ao-publico-para-pesquisa-sobre-coronavirus/)
+e [OpenScienceHub](https://oshub.network/)
+
+
+---
+
+
+class: center
+## Governo
+
+&lt;img src="img/parceria-para-governo-aberto-ogp.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+Fonte da imagem: [CGU](https://www.gov.br/cgu/pt-br/governo-aberto/noticias/2017/3o-plano-de-acao-nacional-na-parceria-para-governo-aberto)
+
+---
+
+class: center
+## Governo
+
+&lt;img src="img/agentes-gov-aberto.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+--
+&lt;img src="img/ogp-brasil.jpeg" width="55%" style="display: block; margin: auto;" /&gt;
+
+Fontes das imagens: [Prefeitura de São Paulo](https://www.prefeitura.sp.gov.br/cidade/secretarias/governo/governo_aberto_na_cidade_de_sao_paulo/index.php?p=280506)
+e [MCTIC](https://twitter.com/mctic/status/1304505551695556610)
+
+---
+
+class: center
+## Dados
+&lt;img src="img/opendata.jpg" width="45%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="img/Dados-Abertos.png" width="45%" style="display: block; margin: auto;" /&gt;
+
+Fontes das imagens: [Open Data - JulieBeck](https://blog.scielo.org/blog/2014/07/14/movimento-open-data-se-consolida-internacionalmente/) e [Dados Abertos - Artigo 19](https://artigo19.org/blog/2017/09/20/o-que-sao-dados-abertos/)
+
+
+
+---
+class: title-slide 
+## Como contribuir?
+
+--
+
+- **Código em si** - claro!
+(desenvolvendo novas funções, automatizando o projeto, corrigindo erros, melhorando ferramentas e criando pacotes, etc.)
+
+--
+
+- **Qualidade**
+(report de erros e bugs (*issues*), testes, 
+
+--
+
+- **Organização do projeto**
+(organização de labels e milestones para tarefas, revisão de issues abertas/fechadas, etc.)
+
+--
+
+- **Produção escrita/artística**
+(documentação técnica e não técnica do projeto, material gráfico, traduções - i.e pacote de dados)
+
+--
+
+- **Comunicação**
+(moderação perguntas nos canais de comunicação, apoio a eventos, respostas a perguntas no Stack Overflow, Reddit, GitHub, etc.)
+
+--
+
+- **Ensino-aprendizagem**
+(elaboração de tutoriais, realização de cursos e workshops, mentoria de pessoas no projeto, etc.)
+
+--
+
+- **Eventos**
+(fortalecimento da comunidade, espírito de troca e colaboração)
+
+
+---
+class: title-slide, center
+## Como contribuir?
+
+###Para inspirar:
+
+[**Como Contribuir para o Open Source** - *Quer contribuir para o open source? Um guia sobre como fazer contribuições, para novatos e veteranos*](http://opensource.guide/pt/how-to-contribute/)
+
+[**Como contribuir com projetos de código aberto sem precisar entender de programação** - *Open source é muito mais sobre colaboração do que sobre código*   por Talita Pagani](https://medium.com/@talitapagani/como-contribuir-com-projetos-de-c%C3%B3digo-aberto-sem-precisar-entender-de-programa%C3%A7%C3%A3o-318f94c6e2d3)
+
+
+&lt;img src="img/ubuntusummit.png" width="95%" style="display: block; margin: auto;" /&gt;
+Fonte da imagem: [Ubuntu Summit](http://ubuntusummit.org/index.php/pt/ubuntu-summit-pt)
+
+---
+class: title-slide, center
+## Como contribuir?
+
+###Ferramenta de versionamento: GIT
+
+####Um sistema de controle de versões distribuído, que permite colaboração
+
+&lt;img src="img/gitlab.png" width="45%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="img/github1.png" width="20%" style="display: block; margin: auto;" /&gt;
+&lt;center&gt;GITHUB&lt;/center&gt;
+
+
+
+
+--
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="libs/remark-latest.min.js"></script>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
 "highlightLines": true,
