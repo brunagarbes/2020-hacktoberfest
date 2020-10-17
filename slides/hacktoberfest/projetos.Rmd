@@ -1,0 +1,184 @@
+---
+title: "Contribuindo com projetos!"
+author: 
+  - "R-Ladies São Paulo"
+date: "Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`"
+output:
+  xaringan::moon_reader:
+    seal: true
+    lib_dir: libs
+    css: ["xaringan-themer.css", "custom.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+#      ratio: 191:100
+---
+
+```{r metathis, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_name("github-repo" = "R-Ladies-Sao-Paulo/2020-hacktoberfest") %>% 
+  meta_social(
+    title = "Hacktoberfest 2020 + R-Ladies São Paulo",
+    description = paste(
+      "Apresentação sobre ",
+      "como participar da Hacktoberfest 2020."
+    ),
+    url = "https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/",
+    image = "https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/hacktoberfest/img/share-card.png",
+    image_alt = paste(
+      "Primeiro slide da apresentação sobre ",
+      "como participar da Hacktoberfest 2020.",
+      "Apresentado por Angélica Custódio."
+    ),
+    og_type = "website",
+    og_author = c("Beatriz Milz", "Angélica Custódio"),
+    twitter_card_type = "summary_large_image",
+    twitter_creator = c("@beamilz", "@angcustodio")
+  )
+```
+
+```{r eval=FALSE, include=FALSE}
+#devtools::install_github("hadley/emo", dependencies = TRUE)
+#install.packages("sysfonts")
+#install.packages("showtext")
+#install.packages("xaringan")
+#install.packages("xaringanthemer")
+#install.packages("metathis")
+#devtools::install_github("gadenbuie/xaringanExtra")
+```
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#072540",
+  secondary_color = "#9c4668",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+```{r xaringanExtra, echo=FALSE}
+xaringanExtra::use_logo(
+  image_url = "img/Icon.png",
+  link_url = "https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/")
+
+```
+
+
+
+
+## Momento para contribuir! 
+
+- Em salas do zoom:
+
+[Sala 1](#sala1) (Diego Rabatone) - Sala temporária para completar a instalação!
+
+[Sala 2](#sala2)  (Haydée Svab) - Atualização e organização de listas 
+
+[Sala 3](#sala3)  (Bruna Garbes) - Traduções para o projeto glosario
+
+[Sala 4](#sala4) (Angélica Custódio) - Pacote dados + Tradução de códigos
+
+[Sala 5](#sala5)  (Beatriz Milz) - Pacote segurancaSP
+
+- Cole o link de __todos__ os PRs feitos durante o evento [nesta issue](https://github.com/R-Ladies-Sao-Paulo/2020-hacktoberfest/issues/2) para que a gente consiga, ao final do evento, saber quantas contribuições foram feitas!
+
+
+---
+name: sala1
+class: middle
+
+## Sala 1 - Sala temporária para completar a instalação!
+
+- Objetivo é completar o processo de instalação descrito [neste slide](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/git_rstudio/setup_Git_GitHub_RStudio.html)!
+
+- Assim que todas as pessoas completarem este processo de instalação, a sala será encerrada.
+
+---
+name: sala2
+class: middle
+
+## Sala 2 - Atualização e organização de listas 
+
+- Contribuição via interface web do GitHub.
+
+- Repositório: [R-Ladies-Sao-Paulo/RLadies-Brasil](https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil), lista com as redes sociais dos capítulos, e eventos online futuros e passados. __Sugestão de contribuição:__ É interessante verificar se todas as redes sociais dos capítulos estão listadas. Além disso, adicionar eventos futuros, passados, e o link dos materiais.
+
+- Repositório: [beatrizmilz/materiais_estudo_R](https://github.com/beatrizmilz/materiais_estudo_R), lista com materiais de estudo de R. __Sugestão de contribuição:__ Organização, adicionar novos materiais interessantes, padronizar os materiais que já estão no repositório.
+
+---
+name: sala3
+class: middle
+
+## Sala 3 - Traduções para o projeto [glosario](https://glosario.carpentries.org/pt/)
+
+- Contribuição via interface web do GitHub.
+
+- Necessário saber inglês.
+
+- [Guia sobre como contribuir - página 7](https://docs.google.com/document/d/1tJVYv5U0chIRrtX7ZME5SltTI74pKncxsD8TT6tWvoE/edit)
+
+- [Arquivo para contribuir](https://github.com/carpentries/glosario/blob/master/glossary.yml), ao fazer um PR __apenas__ edite este arquivo!
+
+
+> `glosario` é um glossário de código aberto (open source) de termos utilizados em ciência de dados (data science) que está disponível online, e também como um pacote de R e uma biblioteca de Python. 
+
+
+---
+name: sala4
+class: middle
+
+## Sala 4 - Pacote dados + Tradução de códigos
+
+- Contribuição via RStudio, em arquivos `.Rmd`
+
+- Não é obrigatório saber inglês, mas facilita.
+
+- [Instruções para contribuições](https://r4ds-dados.netlify.app/index.html)
+
+- Onde começar? [Veja o projects do repositório](https://github.com/R-Ladies-Sao-Paulo/R4DS_dados/projects/1).
+
+O [pacote {dados}](https://github.com/cienciadedatos/dados) é um pacote desenvolvido pela comunidade Latino-Americana com a tradução de diversas bases de dados utilizadas em livros e ensino de `R`. O livro [R for Data Science](https://r4ds.had.co.nz/) utiliza muitas bases que estão disponíveis no [pacote {dados}](https://github.com/cienciadedatos/dados). Portanto, neste repositório buscamos traduzir os __códigos, gráficos e tabelas__ que __utilizem as bases de dados__ que estão no [pacote {dados}](https://github.com/cienciadedatos/dados). 
+
+---
+name: sala5
+class: middle
+
+## Sala 5 - Pacote segurancaSP
+
+>  Pacote criado para facilitar o acesso às estatísticas do site da Secretaria da Segurança Pública do governo de São Paulo (SSP-SP).
+
+- Contribuição via RStudio - vamos trabalhar com um pacote!
+
+- Pacote criado por [Gabriela Caesar](https://github.com/gabrielacaesar)
+
+- Repositório: [gabrielacaesar/segurancaSP](https://github.com/gabrielacaesar/segurancaSP)
+
+- Por onde começar? [Veja as issues](https://github.com/gabrielacaesar/segurancaSP/issues)
+
+- Objetivo: melhorar a documentação do pacote, criar novas funções para disponibilizar mais dados, etc.
+
+
+---
+class: middle
+
+## Teremos até as 15h para contribuir!
+
+15h00 às 15h30:
+
+- Divulgação do formulário para feedback
+
+- Compartilhamento sobre o que achou: O que aprendeu de novo? Quais foram as dificuldades? 
+
+- Sorteio!
+
+- Quantas contribuições foram feitas?
+
+> - Cole o link de __todos__ os PRs feitos durante o evento [nesta issue](https://github.com/R-Ladies-Sao-Paulo/2020-hacktoberfest/issues/2) para que a gente consiga, ao final do evento, saber quantas contribuições foram feitas!
+
+

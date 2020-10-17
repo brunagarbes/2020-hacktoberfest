@@ -1,5 +1,5 @@
 ---
-title: "Configurando o Git e GitHub no RStudio"
+title: "Contribuindo através da interface gráfica do RStudio"
 author: "R-Ladies São Paulo"
 date: "Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`"
 encoding: "UTF-8"

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Git: o que é um sistema de controle de versão?</title>
+    <title>.gitignore: só versione o que realmente interessa</title>
     <meta charset="utf-8" />
     <meta name="author" content="R-Ladies São Paulo" />
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
     <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x879fc05ec9b45c9beaf8045ea6f6661","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x327ab7d40fe412691a8abc1e218d95a","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -30,9 +30,9 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Git: o que é um sistema de controle de versão?
+# .gitignore: só versione o que realmente interessa
 ### R-Ladies São Paulo
-### Atualizado em 16/10/2020
+### Atualizado em 15/10/2020
 
 ---
 
@@ -64,7 +64,7 @@ top:1em;right:1em;
         setTimeout(addLogo, 100)
       }
     } else {
-      document.querySelectorAll('.remark-slide-content:not(.hide-logo)')
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
         .forEach(function (slide) {
           const logo = document.createElement('a')
           logo.classList = 'xaringan-extra-logo'
@@ -90,51 +90,25 @@ top:1em;right:1em;
 
 
 
-
-exemplo interessante: trabalho academico versão 1 , 2 , 5234423, final final
-
-
----
-class: hide-logo
-
-
-- [Sistema de controle de versão](https://glosario.carpentries.org/pt/): Um sistema para gerenciar as mudanças feitas em um software durante o seu desenvolvimento.
-
-
-
----
-
-## O que é Git?
-
-
+# O que é um arquivo .gitignore?
 
 ---
 
 ## Comentários 
 
-- Você pode usar o Git através:
-  -  __Linha de comando__ :
-      - [git](https://git-scm.com/)
-      - terminal do RStudio
-  - __Interfaces gráficas__:
-      - [GitHub Desktop](https://desktop.github.com/)
-      - [Sourcetree](https://www.sourcetreeapp.com/)
-      - Git Pane do RStudio
-      - Entre outros!
+- É um arquivo de texto que diz ao git quais arquivos (ou padrões) ele deve ignorar. 
+
+- Geralmente ele é usado para evitar o envio de arquivos temporários de seu diretório de trabalho que não são úteis para outros colaboradores, como produtos de compilação, arquivos temporários criados por IDEs, etc.
+
+- Um exemplo são os arquivos com a extensão .RProj que são criados quando trabalhamos com projetos no RStudio.
     
-Logo apresentaremos como utilizar através do RStudio, mas escolha o que é mais confortável para você :)
-
-- Independente de qual ferramenta você escolher, é importante qual comando do Git equivale a um "botão" na interface gráfica. É muito importante entender as equivalências!
-
-
-
 ---
 class: center, middle 
 
-## Linha de comando ou interface gráfica?
-## Use o que for melhor para **você**!
+## Exemplo de um arquivo .gitignore
 
-&lt;img src="https://media0.giphy.com/media/dNgK7Ws7y176U/giphy.gif" width="50%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="img/prints/exemple_gitignore_file.png" width="70%" style="display: block; margin: auto;" /&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="libs/remark-latest.min.js"></script>
