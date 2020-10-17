@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Hacktoberfest + R-Ladies São Paulo</title>
+    <title>Contribuindo com projetos!</title>
     <meta charset="utf-8" />
     <meta name="author" content="R-Ladies São Paulo" />
     <meta name="github-repo" content="R-Ladies-Sao-Paulo/2020-hacktoberfest"/>
@@ -27,11 +27,14 @@
   </head>
   <body>
     <textarea id="source">
+class: center, middle, inverse, title-slide
 
-class: title-slide, center
-background-image: url("https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/img/arte_meetup.png")
-background-position: center
-background-size: contain
+# Contribuindo com projetos!
+### R-Ladies São Paulo
+### Atualizado em 17/10/2020
+
+---
+
 
 
 
@@ -76,194 +79,116 @@ top:1em;right:1em;
 </div>
 
 
- &lt;!-- R-Ladies São Paulo --&gt;
 
 
-Atualizado em 16/10/2020
+## Momento para contribuir! 
+
+- Em salas do zoom:
+
+[Sala 1](#sala1) (Diego Rabatone) - Sala temporária para completar a instalação!
+
+[Sala 2](#sala2)  (Haydée Svab) - Atualização e organização de listas 
+
+[Sala 3](#sala3)  (Bruna Garbes) - Traduções para o projeto glosario
+
+[Sala 4](#sala4) (Angélica Custódio) - Pacote dados + Tradução de códigos
+
+[Sala 5](#sala5)  (Beatriz Milz) - Pacote segurancaSP
+
+- Cole o link de __todos__ os PRs feitos durante o evento [nesta issue](https://github.com/R-Ladies-Sao-Paulo/2020-hacktoberfest/issues/2) para que a gente consiga, ao final do evento, saber quantas contribuições foram feitas!
 
 
 ---
+name: sala1
+class: middle
 
-## O que é a **Hacktoberfest**?
+## Sala 1 - Sala temporária para completar a instalação!
 
-- É uma celebração do __open source__ que ocorre em outubro.
+- Objetivo é completar o processo de instalação descrito [neste slide](https://r-ladies-sao-paulo.github.io/2020-hacktoberfest/slides/git_rstudio/setup_Git_GitHub_RStudio.html)!
 
-- A **Hacktoberfest** é aberta para todes!
+- Assim que todas as pessoas completarem este processo de instalação, a sala será encerrada.
 
-- Pessoas fazem contribuições em projetos abertos.
+---
+name: sala2
+class: middle
 
-- Caso faça contribuições válidas (de acordo com as regras), pode ganhar uma camiseta. 👕
+## Sala 2 - Atualização e organização de listas 
 
+- Contribuição via interface web do GitHub.
+
+- Repositório: [R-Ladies-Sao-Paulo/RLadies-Brasil](https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil), lista com as redes sociais dos capítulos, e eventos online futuros e passados. __Sugestão de contribuição:__ É interessante verificar se todas as redes sociais dos capítulos estão listadas. Além disso, adicionar eventos futuros, passados, e o link dos materiais.
+
+- Repositório: [beatrizmilz/materiais_estudo_R](https://github.com/beatrizmilz/materiais_estudo_R), lista com materiais de estudo de R. __Sugestão de contribuição:__ Organização, adicionar novos materiais interessantes, padronizar os materiais que já estão no repositório.
+
+---
+name: sala3
+class: middle
+
+## Sala 3 - Traduções para o projeto [glosario](https://glosario.carpentries.org/pt/)
+
+- Contribuição via interface web do GitHub.
+
+- Necessário saber inglês.
+
+- [Guia sobre como contribuir - página 7](https://docs.google.com/document/d/1tJVYv5U0chIRrtX7ZME5SltTI74pKncxsD8TT6tWvoE/edit)
+
+- [Arquivo para contribuir](https://github.com/carpentries/glosario/blob/master/glossary.yml), ao fazer um PR __apenas__ edite este arquivo!
+
+
+&gt; `glosario` é um glossário de código aberto (open source) de termos utilizados em ciência de dados (data science) que está disponível online, e também como um pacote de R e uma biblioteca de Python. 
 
 
 ---
-## Regras para receber o prêmio
+name: sala4
+class: middle
 
-- Necessário realizar 4 contribuições válidas, através de __Pull Requests__ no [GitHub](https://github.com).
+## Sala 4 - Pacote dados + Tradução de códigos
 
-- Para ser uma contribuição válida:
+- Contribuição via RStudio, em arquivos `.Rmd`
 
-- Precisa ser submetida durante o mês de outubro
+- Não é obrigatório saber inglês, mas facilita.
 
-- Submetida em um repositório __público__ e:
-  
-  - Para repositórios __sem__ a label `Hacktoberfest`: A pessoa mantenedora do repositório precisa adicionar uma label/rótulo de `hacktoberfest-accepted` no PR
-  
-   - Para repositórios __com__ o tópico `Hacktoberfest`: PR é aprovado ou merged
+- [Instruções para contribuições](https://r4ds-dados.netlify.app/index.html)
+
+- Onde começar? [Veja o projects do repositório](https://github.com/R-Ladies-Sao-Paulo/R4DS_dados/projects/1).
+
+O [pacote {dados}](https://github.com/cienciadedatos/dados) é um pacote desenvolvido pela comunidade Latino-Americana com a tradução de diversas bases de dados utilizadas em livros e ensino de `R`. O livro [R for Data Science](https://r4ds.had.co.nz/) utiliza muitas bases que estão disponíveis no [pacote {dados}](https://github.com/cienciadedatos/dados). Portanto, neste repositório buscamos traduzir os __códigos, gráficos e tabelas__ que __utilizem as bases de dados__ que estão no [pacote {dados}](https://github.com/cienciadedatos/dados). 
+
+---
+name: sala5
+class: middle
+
+## Sala 5 - Pacote segurancaSP
+
+&gt;  Pacote criado para facilitar o acesso às estatísticas do site da Secretaria da Segurança Pública do governo de São Paulo (SSP-SP).
+
+- Contribuição via RStudio - vamos trabalhar com um pacote!
+
+- Pacote criado por [Gabriela Caesar](https://github.com/gabrielacaesar)
+
+- Repositório: [gabrielacaesar/segurancaSP](https://github.com/gabrielacaesar/segurancaSP)
+
+- Por onde começar? [Veja as issues](https://github.com/gabrielacaesar/segurancaSP/issues)
+
+- Objetivo: melhorar a documentação do pacote, criar novas funções para disponibilizar mais dados, etc.
+
 
 ---
 class: middle
 
-### Como saber se um repositório é público? 
+## Teremos até as 15h para contribuir!
 
-Ele não é privado! __ATENÇÃO:__ Contribuições para repositórios privados NÃO contam para a Hacktoberfest. Exemplo de repositório privado:
+15h00 às 15h30:
 
-&lt;img src="img/exemplo-repo-privado.png" width="100%" style="display: block; margin: auto;" /&gt;
+- Divulgação do formulário para feedback
 
+- Compartilhamento sobre o que achou: O que aprendeu de novo? Quais foram as dificuldades? 
 
+- Sorteio!
 
+- Quantas contribuições foram feitas?
 
----
-class: middle
-
-## Repositórios podem ter tópicos. 
-
-Exemplo:
-
-&lt;img src="img/exemplo-repo-topicos.png" width="100%" style="display: block; margin: auto;" /&gt;
-
----
-class: middle
-
-## Exemplos de repositórios
-
-.pull-left[
-### __Com__ tópico Hacktoberfest
-
-&lt;img src="img/exemplo-com-topico-hacktoberfest.PNG" width="100%" style="display: block; margin: auto;" /&gt;
-
-[carpentries/glosario](https://github.com/carpentries/glosario)
-]
-
-.pull-right[
-### __Sem__ tópico Hacktoberfest
-
-&lt;img src="img/exemplo-sem-topico-hacktoberfest.PNG" width="100%" style="display: block; margin: auto;" /&gt;
-
-[R-Ladies-Sao-Paulo/xaringan](https://github.com/R-Ladies-Sao-Paulo/xaringan)
-]
-
-
----
-class: middle
-
-## Pull Requests (PRs) podem ter labels
-
-Exemplo de Pull Request com label/rótulo de `hacktoberfest-accepted`:
-
-&lt;img src="img/exemplo-PR-label-hacktoberfest-accepted.PNG" width="100%" style="display: block; margin: auto;" /&gt;
-
-
----
-## Como participar?
-
-- No site da __Hacktoberfest__, clique em [Start Hacking](https://hacktoberfest.digitalocean.com/login)
-
-
-&lt;img src="img/start_hacking.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
-
----
-## Como participar?
-
-- Dê permissão utilizando sua conta do GitHub
-
-&lt;img src="img/con_github.jpeg" width="50%" style="display: block; margin: auto;" /&gt;
-
----
-## Como participar?
-
-- [Nesta página](https://hacktoberfest.digitalocean.com/profile) ficarão listados as suas contribuções, com uma legenda sobre o status da sua contribuição. Exemplo:
-
-&lt;img src="img/exemplo-profile.png" width="80%" style="display: block; margin: auto;" /&gt;
-
-
----
-class: middle, center
-
-&lt;img src="img/profile-nome-usuarie.png" width="100%" style="display: block; margin: auto;" /&gt;
-
----
-class: middle, center
-
-&lt;img src="img/profile-progresso.png" width="100%" style="display: block; margin: auto;" /&gt;
-
-
----
-class: middle, center
-
-&lt;img src="img/exemplo-contribuicoes.png" width="100%" style="display: block; margin: auto;" /&gt;
-
----
-class: middle, center
-
-&lt;img src="img/explicacao-contribuicao.png" width="100%" style="display: block; margin: auto;" /&gt;
-
----
-
-## Legenda (parte 1!)
-
-- ![](https://hacktoberfest.digitalocean.com/assets/icon-light-pending-582457b485f011e10472cf119054f1d8891ae3eed9f6ae7beae19150dcb4ca95.svg)  __Em Revisão__: Seu PR foi aceito por uma pessoa mantenedora e atualmente está dentro do período de revisão, que dura quatorze dias. 
-
-- ![](https://hacktoberfest.digitalocean.com/assets/icon-light-unaccepted-96a3930bd7cc38d7096f1eb28ce184bb18b624bad00079954c644f3e315a559b.svg)  __Pendente__: Seu PR ainda não foi aceito por uma pessoa mantenedora. Uma mantenedora pode aceitar seu PR caso faça o `merge`, adicionando o rótulo "hacktoberfest-accepted" ou aprovando-o. 
-
-- ![](https://hacktoberfest.digitalocean.com/assets/icon-light-invalid-65ff290db8df3c5390866ba4d2e838a61002c1cba601b03e43dd2782ad47840d.svg)  __Inválido__: Seu PR foi rotulado como "inválido" ou "spam" por uma mantenedora e não contará para a Hacktoberfest.
-
----
-
-## Legenda (parte 2!)
-
-
-- ![](https://hacktoberfest.digitalocean.com/assets/icon-light-ineligible-4640f9976727559d4dfb33259eda6bb469ed64926da95709549ae8f6266f2a95.svg) __Repositório não elegível__: Seu PR foi enviado para um repositório que não está participando da Hacktoberfest. As mantenedoras do repositório podem adicionar o tópico "hacktoberfest" ao seu repositório se desejarem participar. Alternativamente, um PR individual pode ser optado por uma mantenedora adicionando o rótulo "hacktoberfest-aceito" ao PR. 
-
-
-- ![](https://hacktoberfest.digitalocean.com/assets/icon-light-eligible-10af2173b253295e62295a5a9a4e13cb03ef63e0f71c378d16700ff3abc9156f.svg) __Aceito__: Parabéns! Seu PR passou no período de revisão e conta para a conclusão do desafio da Hacktoberfest!
-
-
-
----
-class: inverse, center, middle
-
-## Bom evento! 👩‍💻
-
-
-Caso tenha dúvidas, veja as [perguntas frequentes](https://hacktoberfest.digitalocean.com/faq)!
-
-
-Apresentação feita com &lt;i class="fab fa-r-project"&gt;&lt;/i&gt; e os pacotes [xaringan](https://github.com/yihui/xaringan) + [xaringanthemer](https://pkg.garrickadenbuie.com/xaringanthemer/) e [xaringanExtra](https://pkg.garrickadenbuie.com/xaringanExtra/), por:
-
- Beatriz Milz
-&lt;!-- &lt;a href='https://beatrizmilz.com'&gt;&lt;i class="fas fa-house-user"&gt;&lt;/i&gt;&lt;/a&gt; --&gt;
-&lt;!-- &lt;a href='mailto:beatriz.milz@usp.br'&gt;&lt;i class="far fa-envelope"&gt;&lt;/i&gt;&lt;/a&gt; --&gt;
-&lt;a href='https://twitter.com/BeaMilz'  target="_blank"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;!-- &lt;a href='https://github.com/beatrizmilz' target="_blank"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/a&gt; --&gt;
-&lt;!-- &lt;a href='https://orcid.org/0000-0002-3064-4486' target="_blank"&gt;&lt;i class="fab fa-orcid"&gt;&lt;/i&gt;&lt;/a&gt; --&gt;
-&lt;!-- &lt;a href='http://lattes.cnpq.br/5150665880581477' target="_blank"&gt;&lt;i class="ai ai-lattes"&gt;&lt;/i&gt;&lt;/a&gt; &lt;a href='https://beatrizmilz.github.io/resume/index.html' target="_blank"&gt;&lt;i class="ai ai-cv"&gt;&lt;/i&gt;&lt;/a&gt; --&gt;
-&lt;!-- &lt;a href='https://discourse.curso-r.com/u/beatrizmilz/summary' target="_blank"&gt;&lt;i class="fab fa-discourse"&gt;&lt;/i&gt;&lt;/a&gt;  --&gt;
-&lt;!-- &lt;a href='https://www.instagram.com/beatrizmilz/' target="_blank"&gt;&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;  --&gt;
-
- Angélica Custódio
-&lt;a href='https://twitter.com/angcustodio'  target="_blank"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
-
- Jean Prado
-&lt;a href='https://twitter.com/jeangprado'  target="_blank"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
-
-
-  
-&lt;!-- inicio font awesome --&gt;
-&lt;script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"&gt;&lt;/script&gt;
-&lt;!-- final font awesome --&gt;
-
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"&gt;
+&gt; - Cole o link de __todos__ os PRs feitos durante o evento [nesta issue](https://github.com/R-Ladies-Sao-Paulo/2020-hacktoberfest/issues/2) para que a gente consiga, ao final do evento, saber quantas contribuições foram feitas!
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

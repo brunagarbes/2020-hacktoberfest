@@ -1,0 +1,140 @@
+---
+title: "Contribuindo através da interface web do GitHub"
+author: "R-Ladies São Paulo"
+date: "Atualizado em `r format(Sys.Date(), format='%d/%m/%Y')`"
+encoding: "UTF-8"
+output:
+  xaringan::moon_reader:
+    seal: true
+    lib_dir: libs
+    chakra: libs/remark-latest.min.js
+    css: [xaringan-themer.css, custom.css]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+#      ratio: 191:100
+glosario:
+   language: 'pt'
+---
+class: middle, center
+
+```{r, child="configuracao.Rmd"}
+
+```
+
+
+- Contribuímos diretamente do navegador, através do site do GitHub!
+
+- Não é necessário instalar o Git no computador.
+
+- Útil para __contribuições mais simples__, exemplo:
+
+  - Listas
+
+  - Textos marcados com Markdown
+
+  - Traduções
+  
+  
+
+
+---
+
+## Escolha um repositório!
+
+Neste exemplo usaremos [este repositório](https://github.com/PyLadiesSP/Cursos) com materiais da PyLadies SP.
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-contribuir-via-web.PNG")
+```
+
+
+---
+
+## Escolha um arquivo para contribuir
+
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-contribuir-via-web-escolha-arquivo.png")
+```
+
+
+---
+
+## Vamos contribuir no arquivo [README.MD](https://github.com/PyLadiesSP/Cursos/blob/master/README.md)
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-contribuir-via-web-lapis.png")
+```
+
+---
+class: middle, hide-logo
+
+> "Você está fazendo alterações em um projeto ao qual não tem acesso para escrever. __Nós criamos um fork deste projeto__ para você enviar as alterações propostas. O envio de uma alteração a gravará em um novo branch em seu fork, para que você possa enviar um Pull Request."
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-contribuir-via-web-apos-lapis.png")
+```
+
+---
+class: middle 
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo_edit-file.PNG")
+```
+
+---
+class: middle 
+
+Faça uma alteração na aba `edit file`:
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo_edit-file_com_alteracao.PNG")
+```
+
+---
+class: middle 
+
+Veja como a alteração aparecerá, na aba `preview`:
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo_preview-file.PNG")
+```
+
+---
+class: middle, hide-logo 
+
+Ao final da página, escreva uma mensagem de commit - que resuma suas contribuições, e aperte o botão `Propose changes` (a tradução seria 'propor mudanças'):
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-mensagem-commit.png")
+```
+
+---
+class: middle, hide-logo 
+
+Após conferir se as mudanças estão corretas, clique no botão 'Create pull request':
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-pull-request.png")
+```
+
+---
+class: middle, hide-logo 
+
+Descreva do que se trata sua contribuição, e então clique em `Create pull request`.
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo_open-pull-request.png")
+```
+
+
+---
+class: middle, hide-logo 
+
+O PR foi criado! Agora é só esperar a pessoa mantenedora avaliar. 
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+knitr::include_graphics("img/exemplo-pr_criado.PNG")
+```
