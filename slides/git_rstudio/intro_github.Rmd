@@ -23,9 +23,179 @@ class: middle, center, inverse
 
 ```
 
+
+# O que é Github?
+
 ---
+class: hide-logo, center, middle
+
+O Github é uma plataforma de hospedagem de código e arquivos com controle de versão usando o Git. 
+
+Funciona como uma rede colaborativa, onde as pessoas colocam seus projetos para desenvolvimento e hospedagem do código.
+
+```{r echo=FALSE, out.width="70%"}
+knitr::include_graphics("img/github_about.jpeg")
+```
+
+---
+## Visão Geral do Github
 
 ```{r echo=FALSE, out.width="70%"}
 knitr::include_graphics("img/github.PNG")
 ```
 
+---
+
+## Algumas funcionalidades 
+
+- Documentação em Repositórios
+
+- Pull requests com comentário e revisão de código
+
+- Histórico de commits
+
+- Notificações por email
+
+- Arquivos podem ser vistos e comparados com versões anteriores
+
+- GitHub Pages: pequenos websites podem ser feitos.
+
+
+---
+
+## Repositórios
+
+```{r echo=FALSE, out.width="80%"}
+knitr::include_graphics("img/github2.jpeg")
+```
+
+---
+
+## Criando um Repositório
+
+```{r echo=FALSE, out.width="70%"}
+knitr::include_graphics("img/github4.jpeg")
+```
+
+---
+
+## Contribuindo em um Repositório
+
+```{r echo=FALSE, out.width="90%"}
+knitr::include_graphics("img/github3.jpeg")
+```
+
+---
+
+## Fork em um Repositório
+
+Fazendo o Fork
+
+```{r echo=FALSE, out.width="90%"}
+knitr::include_graphics("img/fork.png")
+```
+
+
+---
+
+## Fork em um Repositório
+
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/fork2.jpeg")
+```
+
+
+
+---
+
+## Commit em um Repositório
+
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/github7.jpeg")
+```
+
+
+---
+
+## Pull Request em um Repositório
+
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/github6.jpeg")
+```
+
+---
+
+## Pull Request em um Repositório
+
+
+```{r echo=FALSE, out.width="80%"}
+knitr::include_graphics("img/github8.jpeg")
+```
+
+---
+
+## Histórico de commits
+
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/github9.jpeg")
+```
+
+---
+
+## Histórico dos arquivos
+
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/github11.jpeg")
+```
+
+---
+
+## Histórico dos arquivos
+
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/github10.jpeg")
+```
+
+
+---
+
+## Clonando um Repositório na sua máquina local
+
+
+```{r echo=FALSE, out.width="50%"}
+knitr::include_graphics("img/github15.jpeg")
+```
+
+---
+
+## Github Page
+
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/github12.png")
+```
+
+---
+
+## Github Page
+
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/github13.jpeg")
+```
+
+
+---
+
+## Github também é rede social
+
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/github14.jpeg")
+```
