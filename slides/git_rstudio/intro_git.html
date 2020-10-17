@@ -8,7 +8,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/animate.css/animate.xaringan.css" rel="stylesheet" />
     <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x14edce1cc1c42d8a8e488ede1b50351","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x30c4bcd35cf41d78fe38dd9473b3f4f","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -32,7 +32,7 @@ class: center, middle, inverse, title-slide
 
 # Git: o que é um sistema de controle de versão?
 ### R-Ladies São Paulo
-### Atualizado em 15/10/2020
+### Atualizado em 17/10/2020
 
 ---
 
@@ -90,7 +90,47 @@ top:1em;right:1em;
 
 
 
-# O que é Git?
+# O que é Git/GitHub e por que usá-los?
+
+---
+# Git é uma ferramenta de controle de versão de arquivos
+
+- Um sistema de controle de arquivos nada mais é do que um sistema que registra alterações em um arquivo ou conjunto de arquivos ao longo do tempo para que você possa recuperar versões específicas posteriormente.
+
+-  Ele permite que você reverta os arquivos para um estado anterior, reverta todo o projeto para um estado anterior, analise as alterações feitas ao longo do tempo, veja quem modificou pela última vez algo que pode estar causando um problema, quem introduziu um problema nos seus arquivos/códigos e muito mais!
+
+---
+# Se o git é o coração do Git o hub do GitHub é a alma!
+
+- GitHub é a principal rede social dos desenvolvedores e onde podemos compartilhar tudo o que versionamos usando o git.
+
+- Além disso é onde contrubuimos com outros projetos, fazemos perguntas e trocamos conhecimentos com outras pessoas, pois podemos seguir pessoas e acompanhar o que fazem ou com quem se comunicam.
+
+
+---
+# Fluxo de trabalho e conceitos-chave
+
+- Repositório: (ou só repo) é uma coleção de arquivos (geralmente de códigos)
+
+- Local repository: (repositório local) é uma coleção de arquivos mantidos em nosso computador pessoal
+
+- Remote repository: repositório remoto é a famosa nuvem, ou mais precisamente os servidores do GitHub para o qual enviamos o conteúdo de nosso repositório local para que possamos compartilhar com outras pessoas
+
+- Working directory: pasta/diretório onde mantemos nossa coleção de arquivos e onde trabalhamos com eles.
+
+---
+# Fluxo de trabalho
+
+&lt;img src="./img/prints/diagrama_git.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+# Um arquivo do seu working directory pode assumir 3 estados possíveis:
+
+- Ele pode ser alterado: ou seja, os arquivos com as mudanças atualizadas ainda não estão armazenados no repositório local.
+
+- Ele pode estar na área de stag (staging area): ou seja, os arquivos com as mudanças atualizadas estão marcados para serem commitados no repositório local, mas ainda não foram commitados
+
+- Ele pode ser commitado (commit area): ou seja, as alterações feitas em seu arquivo são armazenadas com segurança no repositório local.
 
 ---
 
